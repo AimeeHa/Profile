@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="w-full px-24 flex items-center justify-center flex-col">
+    <div className="w-full flex items-center justify-center flex-col">
       <Header />
       <Landing />
       <Projects />

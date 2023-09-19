@@ -1,15 +1,29 @@
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 export default function Landing() {
   return (
-    <div className="w-full h-screen relative bg-secondary flex justify-center items-center">
-      <ul className="flex flex-col gap-6 absolute left-0 top-1/2">
-        <li>LinkedIn</li>
-        <li>GitHub</li>
+    <div className="section-root  bg-secondary ">
+      <ul className="flex flex-col gap-6 absolute left-[12px] top-1/2 z-10">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/thuong-ha-719308116"
+            className="hover:cursor-pointer"
+          >
+            <LinkedInIcon />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/AimeeHa" className="hover:cursor-pointer">
+            <GitHubIcon />
+          </a>
+        </li>
       </ul>
 
       <div className="w-full flex flex-col gap-6 items-center">
-        Bio
-        <div>Photo</div>
-        <div>Name & Role</div>
+        <img src="tbu" alt="PHOTO"></img>
+        <div>Thuong Ha (Aimee)</div>
+        <div>Junior Software Engineer</div>
       </div>
     </div>
   );
