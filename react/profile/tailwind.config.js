@@ -5,22 +5,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#00040f',
-        secondary: '#00f6ff',
-        dimWhite: 'rgba(255, 255, 255, 0.7)',
-        dimBlue: 'rgba(9, 151, 124, 0.1)',
+        primary: '#FFF6EA',
+        // secondary: '#00f6ff',
+        menu: '#9F5C59',
       },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+      textColor: {
+        title: '#9F5C59',
+        menu: '#FDE4DB',
+      },
+      fontSize: {
+        title: '18px',
+      },
+      fontWeight: {
+        title: '500',
       },
     },
     screens: {
-      xs: '480px',
-      ss: '620px',
-      sm: '768px',
-      md: '1060px',
-      lg: '1200px',
-      xl: '1700px',
+      tablet: '640px',
+      laptop: '1024px',
+      desktop: '1280px',
     },
   },
   plugins: [],
