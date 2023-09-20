@@ -22,6 +22,10 @@
   .nav-menu-mobile {
     @apply h-screen w-screen z-20 absolute top-0 right-0 flex flex-col items-center gap-[36px] bg-menu text-menu;
   }
+
+  .download-btn {
+    @apply flex flex-row gap-[4px] items-center justify-center pr-[8px] pl-[12px] py-[2px] border-[1px] border-solid rounded-[18px];
+  }
 }
 
 :root {

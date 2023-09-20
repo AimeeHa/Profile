@@ -42,7 +42,7 @@ export default function Header() {
               ))}
             </ul>
             <div className="w-max nav-items justify-end ">
-              <div className="flex flex-row gap-[4px] pr-[8px] pl-[12px] py-[2px] text-primary bg-[#9F5C59] border-[1px] border-solid rounded-[18px]">
+              <div className="download-btn  text-primary bg-[#9F5C59]  border-[#9F5C59]">
                 <div>Download CV</div>
                 <div>
                   <DownloadRoundedIcon />
@@ -82,7 +82,12 @@ export default function Header() {
                         {item}
                       </li>
                     ))}
-                    <li>Download CV</li>
+                    <li className="download-btn border-[#FDE4DB]">
+                      <div>Download CV</div>
+                      <div>
+                        <DownloadRoundedIcon />
+                      </div>
+                    </li>
                   </ul>
                 </div>
               )}
