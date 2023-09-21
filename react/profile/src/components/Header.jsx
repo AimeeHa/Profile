@@ -6,7 +6,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 
 export default function Header() {
-  const navItems = ['About', 'Projects', 'Contact'];
+  const navItems = ['about', 'projects', 'contact'];
   const [isNotMobile, setIsNotMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,6 +15,28 @@ export default function Header() {
       setIsNotMobile(true);
     }
   }, []);
+
+  // Mapping nav items
+  const navItemsMapping = navItems.map((item) => (
+    <li
+      key={item}
+      onClick={(e) => {
+        e.preventDefault(); //TODO: without -> there's # link in url but not scroll smoothly
+        handleNavClick(item);
+      }}
+    >
+      <a href={`/#${item}`}>{item[0].toUpperCase() + item.substring(1)}</a>
+    </li>
+  ));
+
+  // Scroll to section when nav item is clicked
+  const handleNavClick = (item) => {
+    const id = item;
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -35,15 +57,12 @@ export default function Header() {
           // Nav bar on other devices
           <>
             <ul className="w-1/2 nav-items justify-evenly">
-              {navItems.map((item) => (
-                <li key={item} id={item}>
-                  {item}
-                </li>
-              ))}
+              {navItemsMapping}
             </ul>
             <div className="w-max nav-items justify-end ">
               <div className="download-btn  text-primary bg-[#9F5C59]  border-[#9F5C59]">
                 <div>Download CV</div>
+                {/* TODO: attached file and allow download */}
                 <div>
                   <DownloadRoundedIcon />
                 </div>
@@ -77,13 +96,10 @@ export default function Header() {
                     <CloseRoundedIcon className="text-menu absolute right-[24px] top-[32px] hover:cursor-pointer" />
                   </div>
                   <ul className="flex flex-col gap-[36px] items-center">
-                    {navItems.map((item) => (
-                      <li key={item} id={item}>
-                        {item}
-                      </li>
-                    ))}
+                    {navItemsMapping}
                     <li className="download-btn border-[#FDE4DB]">
                       <div>Download CV</div>
+                      {/* TODO: */}
                       <div>
                         <DownloadRoundedIcon />
                       </div>

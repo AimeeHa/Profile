@@ -1,7 +1,11 @@
 export default function Contact() {
   return (
     <>
-      <div className="section-root flex-col bg-red-50">
+      <section
+        id="contact"
+        name="contact"
+        className="section-root flex-col bg-red-50"
+      >
         <div>Contact Me</div>
         <form className="flex flex-col gap-6">
           <div className="form-div">
@@ -17,7 +21,7 @@ export default function Contact() {
             <textarea id="message" />
           </div>
         </form>
-      </div>
+      </section>
     </>
   );
 }

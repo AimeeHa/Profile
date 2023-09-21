@@ -8,13 +8,13 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="w-full flex items-center justify-center flex-col">
+    <main className="w-full flex items-center justify-center flex-col">
       <Header />
       <Landing />
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }
 
