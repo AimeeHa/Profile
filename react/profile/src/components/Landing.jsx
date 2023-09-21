@@ -4,7 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Landing() {
   return (
     <section id="about" name="about" className="section-root  bg-secondary">
-      <ul className="flex flex-col gap-6 absolute left-[12px] top-[45%] z-10">
+      <ul className="flex flex-col gap-6 absolute left-[12px] top-[45%] z-10 bg-menu">
         <li>
           <a
             href="https://www.linkedin.com/in/thuong-ha-719308116"
