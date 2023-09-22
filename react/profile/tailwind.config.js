@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         primary: '#FFF6EA',
-        // secondary: '#00f6ff',
+        secondary: '#FDE4DB',
         menu: '#9F5C59',
       },
       textColor: {
