@@ -19,7 +19,7 @@ const links = [
 
 export default function Hero() {
   return (
-    <section id="about" name="about" className="section-root  bg-primary">
+    <section className="section-root  bg-primary">
       <ul className="flex flex-col gap-6 absolute left-0 top-[40%] z-10 bg-secondary text-title px-[8px] py-[8px] shadow-[rgba(100,100,111,.2)_0_7px_29px_0]">
         {links.map((link, i) => (
           <li

@@ -1,14 +1,20 @@
 export default function Projects() {
+  const projects = ['Project 1', 'Project 2', 'Project 3'];
   return (
     <>
       <section
         id="projects"
         name="projects"
-        className="section-root flex-col bg-green-50"
+        className="section-root grid grid-cols-3 gap-6 bg-green-50"
       >
-        <div>Project 1</div>
-        <div>Project 2</div>
-        <div>Project 3</div>
+        {projects.map((project, i) => (
+          <div
+            key={i}
+            className="h-[120px] flex items-center justify-center border-solid border-[1px] border-[#9F5C59]"
+          >
+            {project}
+          </div>
+        ))}
       </section>
     </>
   );

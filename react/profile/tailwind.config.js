@@ -11,7 +11,7 @@ export default {
       },
       textColor: {
         title: '#9F5C59',
-        menu: '#FDE4DB',
+        menu: '#FFF6EA',
       },
       fontSize: {
         title: '18px',
@@ -21,7 +21,7 @@ export default {
       },
     },
     screens: {
-      tablet: '640px',
+      tablet: '680px',
       laptop: '1024px',
       desktop: '1280px',
     },

@@ -24,7 +24,7 @@
   }
 
   .download-btn {
-    @apply flex flex-row gap-[4px] items-center justify-center pr-[8px] pl-[12px] py-[2px] border-[1px] border-solid rounded-[18px];
+    @apply flex flex-row gap-[4px] items-center justify-center pr-[8px] pl-[12px] py-[2px] border-[1px] border-solid rounded-[18px] hover:cursor-pointer;
   }
 }
 
