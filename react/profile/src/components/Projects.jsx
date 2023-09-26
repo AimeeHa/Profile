@@ -5,7 +5,7 @@ export default function Projects() {
       <section
         id="projects"
         name="projects"
-        className="section-root grid grid-cols-3 gap-6 bg-green-50"
+        className="section-root grid grid-cols-3 gap-6"
       >
         {projects.map((project, i) => (
           <div

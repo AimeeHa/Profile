@@ -1,5 +1,5 @@
-import logo from '../assets/logo.png';
-import menuLogo from '../assets/logo-menu.png';
+import logo from '../assets/logo-blue2.png';
+import menulogo from '../assets/logo2.png';
 import { useState, useEffect } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
@@ -28,8 +28,12 @@ export default function Header() {
     <li
       key={item}
       onClick={(e) => {
-        e.preventDefault(); //TODO: without -> there's # link in url but not scroll smoothly
-        handleNavClick(item);
+        let element = document.getElementById(item);
+        if (element) {
+          e.preventDefault(); //TODO: without -> there's # link in url but not scroll smoothly
+          setIsMenuOpen(false);
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }}
       className={`px-[4px] h-[32px] flex items-center justify-center border-b-[2px] border-b-solid border-b-transparent ${
         isMenuOpen
@@ -41,20 +45,10 @@ export default function Header() {
     </li>
   ));
 
-  // Scroll to section when nav item is clicked
-  const handleNavClick = (item) => {
-    const id = item;
-    const element = document.getElementById(id);
-    if (element) {
-      setIsMenuOpen(false);
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <nav
-        className="w-full h-[100px] flex items-center bg-primary text-title font-title py-4 px-4 justify-between
+        className="w-full h-[100px] flex items-center bg-primary text-blue font-title py-4 px-4 justify-between
         laptop:px-24 laptop:h-[110px]
         desktop:px-24 desktop:h-[120px]
         tablet:px-12 tablet:h-[110px] tablet:text-[16px]"
@@ -73,7 +67,7 @@ export default function Header() {
               {navItemsMapping}
             </ul>
             <div className="w-max nav-items justify-end ">
-              <div className="download-btn text-primary bg-[#9F5C59] border-[#9F5C59] tablet:w-[152px] hover:bg-[#FFF6EA] hover:text-[#9F5C59]">
+              <div className="download-btn text-primary bg-orange border-orange tablet:w-[152px] hover:bg-[#FFF6EA] hover:text-[#9F5C59]">
                 <div>Download CV</div>
                 {/* TODO: attached file and allow download */}
                 <div>
@@ -94,12 +88,12 @@ export default function Header() {
               >
                 <MenuRoundedIcon
                   style={{ height: '32px', width: '36px' }}
-                  className="bg-menu rounded-[6px] text-menu"
+                  className="bg-menu rounded-[6px] text-menu cursor-pointer"
                 />
               </div>
               {isMenuOpen && (
                 <div className="nav-menu-mobile">
-                  <img src={menuLogo} alt="Aimee Ha" className="h-[100px]" />
+                  <img src={menulogo} alt="Aimee Ha" className="h-[100px]" />
                   <div
                     className="flex justify-end pr-[24px]"
                     onClick={() => {

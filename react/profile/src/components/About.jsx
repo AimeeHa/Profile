@@ -4,7 +4,7 @@ export default function About() {
       <section
         id="about"
         name="about"
-        className="section-root grid grid-cols-3 gap-6 bg-green-5"
+        className="section-root grid grid-cols-3 gap-6 "
       >
         TBU
       </section>

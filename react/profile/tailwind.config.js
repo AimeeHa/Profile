@@ -5,13 +5,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#FFF6EA',
-        secondary: '#FDE4DB',
-        menu: '#9F5C59',
+        primary: '#ffffff',
+        lightbeige: '#fae5df',
+        beige: '#f5cac2',
+        orange: '#ed7966',
+        blue: '#303179',
+        darkblue: '#141850',
       },
       textColor: {
-        title: '#9F5C59',
-        menu: '#FFF6EA',
+        lightbeige: '#fae5df',
+        beige: '#f5cac2',
+        orange: '#ed7966',
+        blue: '#303179',
+        darkblue: '#141850',
       },
       fontSize: {
         title: '18px',
