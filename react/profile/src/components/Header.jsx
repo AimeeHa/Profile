@@ -35,11 +35,11 @@ export default function Header() {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }}
-      className={`px-[4px] h-[32px] flex items-center justify-center border-b-[2px] border-b-solid border-b-transparent ${
-        isMenuOpen
-          ? 'hover:border-b-solid hover:border-b-[#FFF6EA] hover:border-b-[2px]'
-          : 'hover:border-b-solid hover:border-b-[#9F5C59] hover:border-b-[2px]'
-      } hover:cursor-pointer`}
+      className={`px-[4px] flex items-center justify-center hover:text-orange hover:cursor-pointer ${
+        isNotMobile
+          ? 'border-b-[2px] border-b-solid border-b-transparent hover:border-b-solid hover:border-b-orange hover:border-b-[2px]'
+          : 'h-[100%] w-[100%] border-t-[1px] border-t-solid border-t-grey'
+      }`}
     >
       <a href={`/#${item}`}>{item[0].toUpperCase() + item.substring(1)}</a>
     </li>
@@ -67,7 +67,7 @@ export default function Header() {
               {navItemsMapping}
             </ul>
             <div className="w-max nav-items justify-end ">
-              <div className="download-btn text-primary bg-orange border-orange tablet:w-[152px] hover:bg-[#FFF6EA] hover:text-[#9F5C59]">
+              <div className="download-btn">
                 <div>Download CV</div>
                 {/* TODO: attached file and allow download */}
                 <div>
@@ -80,38 +80,43 @@ export default function Header() {
           // Hamburger menu on mobile
           <>
             <div className="flex flex-col w-1/2">
-              <div
-                className="flex justify-end pr-[12px]"
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                <MenuRoundedIcon
-                  style={{ height: '32px', width: '36px' }}
-                  className="bg-menu rounded-[6px] text-menu cursor-pointer"
-                />
-              </div>
-              {isMenuOpen && (
-                <div className="nav-menu-mobile">
-                  <img src={menulogo} alt="Aimee Ha" className="h-[100px]" />
+              {isMenuOpen ? (
+                <>
                   <div
-                    className="flex justify-end pr-[24px]"
+                    className="flex justify-end pr-[12px]"
                     onClick={() => {
-                      setIsMenuOpen(false);
+                      setIsMenuOpen(!isMenuOpen);
                     }}
                   >
-                    <CloseRoundedIcon className="text-menu absolute right-[24px] top-[32px] hover:cursor-pointer" />
+                    <CloseRoundedIcon
+                      className="text-menu hover:cursor-pointer"
+                      style={{ height: '30px', width: '30px' }}
+                    />
                   </div>
-                  <ul className="flex flex-col gap-[36px] items-center text-[16px]">
-                    {navItemsMapping}
-                    <li className="download-btn border-[#FDE4DB] hover:bg-[#FDE4DB] hover:text-[#9F5C59]">
-                      <div>Download CV</div>
-                      {/* TODO: */}
-                      <div>
-                        <DownloadRoundedIcon />
-                      </div>
-                    </li>
-                  </ul>
+                  <div className="nav-menu-mobile">
+                    <ul className="h-[100%] w-screen grid grid-rows-4 grid-cols-1 items-center justify-center text-[16px]">
+                      {navItemsMapping}
+                      <li className="h-[100%] w-[100%] border-t-[1px] border-t-solid border-t-grey flex items-center justify-center">
+                        <div className="download-btn">
+                          <div>Download CV</div>
+                          <DownloadRoundedIcon />
+                          {/* TODO: */}
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </>
+              ) : (
+                <div
+                  className="flex justify-end pr-[12px]"
+                  onClick={() => {
+                    setIsMenuOpen(!isMenuOpen);
+                  }}
+                >
+                  <MenuRoundedIcon
+                    style={{ height: '32px', width: '36px' }}
+                    className="bg-menu rounded-[6px] text-menu cursor-pointer"
+                  />
                 </div>
               )}
             </div>

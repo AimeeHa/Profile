@@ -4,9 +4,14 @@ export default function About() {
       <section
         id="about"
         name="about"
-        className="section-root grid grid-cols-3 gap-6 "
+        className="section-root flex-col px-0 gap-6"
       >
-        TBU
+        <article className="w-[100%] h-[30%] bg-orange px-8  tablet:px-12 laptop:px-16 desktop:px-24">
+          Skills
+        </article>
+        <article className="w-[100%] h-[70%] px-8 tablet:px-12 laptop:px-16 desktop:px-24">
+          Others
+        </article>
       </section>
     </>
   );
