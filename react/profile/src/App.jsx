@@ -39,7 +39,7 @@ function App() {
         // back to top button
         isVisible && (
           <div
-            className="bg-orange text-white fixed right-[24px] bottom-[24px] laptop:right-[48px] laptop:bottom-[48px] desktop:right-[48px] desktop:bottom-[48px] tablet:right-[48px] tablet:bottom-[48px] flex items-center justify-center rounded-[20px] p-[8px] cursor-pointer shadow-[rgba(100,100,111,.4)_0_7px_29px_0]"
+            className="bg-orange text-white fixed right-[24px] bottom-[24px] laptop:right-[48px] laptop:bottom-[48px] desktop:right-[48px] desktop:bottom-[48px] tablet:right-[48px] tablet:bottom-[48px] flex items-center justify-center rounded-[20px] p-[8px] cursor-pointer shadow-[0px_1px_12px_-2px_#2e3179c9]"
             onClick={(e) => {
               e.preventDefault();
               handleBackToTop();

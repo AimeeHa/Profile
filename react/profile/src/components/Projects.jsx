@@ -10,7 +10,7 @@ export default function Projects() {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="h-[50%] flex items-center justify-center bg-beige border-solid border-[1px] border-lightbeige rounded-[36px] hover:bg-orange hover:border-orange cursor-pointer text-white"
+            className="h-[50%] flex items-center justify-center bg-beige border-solid border-[1px] border-lightbeige rounded-[16px] hover:bg-orange hover:border-orange cursor-pointer text-white"
           >
             {project}
           </div>
