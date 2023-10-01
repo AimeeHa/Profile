@@ -35,9 +35,9 @@ export default function Header() {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }}
-      className={`px-[4px] flex items-center justify-center hover:text-orange hover:cursor-pointer ${
+      className={`px-[4px] flex items-center justify-center hover:text-orange hover:cursor-pointer relative transition ease-in-out duration-300 ${
         isNotMobile
-          ? 'border-b-[2px] border-b-solid border-b-transparent hover:border-b-solid hover:border-b-orange hover:border-b-[2px]'
+          ? 'after:hover:bg-orange after:hover:absolute after:hover:top-[24px] after:hover:w-[calc(100%-16px)] after:hover:h-[3px] after:hover:rounded-[8px]'
           : 'h-[100%] w-[100%] border-t-[1px] border-t-solid border-t-grey'
       }`}
     >
