@@ -9,7 +9,7 @@ export default function Contact() {
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
           CONTACT ME
         </h1>
-        <form className="w-1/2 min-w-[320px] min-h-[480px] flex flex-col justify-evenly gap-6 p-[24px] pt-0 bg-[#e6e7f0] rounded-[8px]">
+        <form className="w-1/2 min-w-[320px] min-h-[480px] flex flex-col justify-evenly gap-6 p-[24px] pt-0 bg-[#e6e7f0] rounded-[16px]">
           <div className="form-div pt-[24px]">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" />

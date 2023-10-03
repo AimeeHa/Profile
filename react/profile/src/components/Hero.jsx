@@ -8,7 +8,14 @@ const links = [
     link: 'https://www.linkedin.com/in/thuong-ha-719308116',
   },
   {
-    icon: <GitHubIcon style={{ width: '35px', height: '35px' }} />,
+    icon: (
+      <GitHubIcon
+        style={{
+          width: '35px',
+          height: '40px',
+        }}
+      />
+    ),
     link: 'https://github.com/AimeeHa',
   },
   {
@@ -24,7 +31,7 @@ export default function Hero() {
         {links.map((link, i) => (
           <li
             key={i}
-            className="cursor-pointer flex items-center justify-center"
+            className="cursor-pointer flex items-center justify-center rounded-[8px] hover:translate-y-[-2px] hover:shadow-[0px_1px_12px_-1px_rgba(255,255,255,.6)] transition ease-in-out duration-300 "
           >
             <a href={link.link}>{link.icon}</a>
           </li>

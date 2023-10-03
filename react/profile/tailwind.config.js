@@ -25,6 +25,16 @@ export default {
       fontWeight: {
         title: '500',
       },
+      keyframes: {
+        scrollTop: {
+          '0%': { transform: 'translateY(15%)', opacity: '0' },
+          '75%': { opacity: '1' },
+          '100%': { transform: 'translateY(-15%)', opacity: '0.5' },
+        },
+      },
+      animation: {
+        scrollTop: 'scrollTop 1s ease-in-out infinite',
+      },
     },
     screens: {
       tablet: '680px',
