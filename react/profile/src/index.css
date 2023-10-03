@@ -26,16 +26,6 @@
     @apply w-[calc(100%-24px)] py-[12px] rounded-[8px] bg-white border-[1px] border-solid border-transparent focus:border-blue focus:border-solid focus:border-[1px] focus:outline-none;
   }
 
-  /* nav bar items on non-mobile devices */
-  .nav-items {
-    @apply flex flex-row h-[75%] items-end hover:cursor-pointer;
-  }
-
-  /* nav menu on mobile devices */
-  .nav-menu-mobile {
-    @apply h-1/3 w-screen z-20 absolute top-[100px] right-0 flex flex-col items-center gap-[36px] bg-primary text-blue shadow-[0_5px_5px_0_rgba(0,0,0,.1)];
-  }
-
   .download-btn {
     @apply flex flex-row gap-[4px] items-center justify-center pr-[8px] pl-[12px] py-[2px] border-[1px] border-solid rounded-[18px]  text-primary bg-orange border-orange tablet:w-[152px] hover:bg-blue hover:border-blue hover:text-white hover:cursor-pointer transition ease-in-out duration-300;
   }

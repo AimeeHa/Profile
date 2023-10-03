@@ -63,10 +63,10 @@ export default function Header() {
         {isNotMobile ? (
           // Nav bar on other devices
           <>
-            <ul className="w-1/2 nav-items justify-evenly">
+            <ul className="w-1/2 flex flex-row h-[75%] items-end hover:cursor-pointer justify-evenly">
               {navItemsMapping}
             </ul>
-            <div className="w-max nav-items justify-end ">
+            <div className="w-max flex flex-row h-[75%] items-end hover:cursor-pointer justify-end ">
               <div className="download-btn">
                 <div>Download CV</div>
                 {/* TODO: attached file and allow download */}
@@ -93,7 +93,7 @@ export default function Header() {
                       style={{ height: '30px', width: '30px' }}
                     />
                   </div>
-                  <div className="nav-menu-mobile">
+                  <div className="h-1/3 w-screen z-20 absolute top-[100px] right-0 flex flex-col items-center gap-[36px] bg-primary text-blue shadow-[0_5px_5px_0_rgba(0,0,0,.1)]">
                     <ul className="h-[100%] w-screen grid grid-rows-4 grid-cols-1 items-center justify-center text-[16px]">
                       {navItemsMapping}
                       <li className="h-[100%] w-[100%] border-t-[1px] border-t-solid border-t-grey flex items-center justify-center">
