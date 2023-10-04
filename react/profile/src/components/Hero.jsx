@@ -1,6 +1,7 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+import hero from '../assets/hero.png';
 
 const links = [
   {
@@ -26,8 +27,8 @@ const links = [
 
 export default function Hero() {
   return (
-    <section className="section-root ">
-      <ul className="flex flex-col gap-6 absolute left-0 top-[40%] z-10 bg-orange text-white px-[8px] py-[8px] rounded-[0px_8px_8px_0px] shadow-[0px_1px_12px_-2px_#2e3179c9]">
+    <section className="section-root pb-0">
+      <ul className="flex flex-col gap-[12px] tablet:gap-[24px] laptop:gap-[24px] desktop:gap-[24px] absolute left-0 top-[40%] z-10 bg-orange text-white px-[4px] py-[4px] tablet:px-[8px] tablet:py-[8px] laptop:px-[8px] laptop:py-[8px] desktop::px-[8px] desktop::py-[8px] rounded-[0px_8px_8px_0px] shadow-[0px_1px_12px_-2px_#2e3179c9]">
         {links.map((link, i) => (
           <li
             key={i}
@@ -38,12 +39,12 @@ export default function Hero() {
         ))}
       </ul>
 
-      <article className="w-full flex flex-col gap-[12px] items-center ">
-        <img src="tbu" alt="PHOTO"></img>
-        <h1 className="text-[36px] text-orange font-[800]">
+      <article className="w-full h-full flex flex-col gap-[12px] items-center ">
+        <img src={hero} alt="PHOTO" className="h-full"></img>
+        <h1 className="text-[36px] text-orange font-[800] z-1 absolute">
           THUONG HA (AIMEE)
         </h1>
-        <h2 className="text-[18px] text-blue font-[550]">
+        <h2 className="text-[18px] text-blue font-[550] z-1 absolute">
           JUNIOR SOFTWARE ENGINEER
         </h2>
       </article>
