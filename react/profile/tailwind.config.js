@@ -9,6 +9,7 @@ export default {
         lightbeige: '#fae5df',
         beige: '#f5cac2',
         orange: '#ed7966',
+        lightblue: '#3031799c',
         blue: '#303179',
         darkblue: '#141850',
       },

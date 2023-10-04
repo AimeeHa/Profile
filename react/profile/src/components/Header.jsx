@@ -5,23 +5,10 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 
-export default function Header() {
+export default function Header(props) {
   const navItems = ['about', 'projects', 'contact'];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isNotMobile, setIsNotMobile] = useState(window.innerWidth > 640);
-
-  useEffect(() => {
-    function updateIsNotMobile() {
-      setIsNotMobile(window.innerWidth > 640);
-    }
-    // update when window is resized
-    window.addEventListener('resize', updateIsNotMobile);
-
-    // remove listener when component is unmounted
-    return () => {
-      window.removeEventListener('resize', updateIsNotMobile);
-    };
-  }, []);
+  const isNotMobile = props.isNotMobile;
 
   // Mapping nav items
   const navItemsMapping = navItems.map((item) => (

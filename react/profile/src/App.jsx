@@ -9,7 +9,9 @@ import About from './components/About';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isNotMobile, setIsNotMobile] = useState(window.innerWidth > 640);
 
+  // back to top button handler
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 130) {
@@ -27,10 +29,24 @@ function App() {
     });
   };
 
+  // update isNotMobile state when window is resized
+  useEffect(() => {
+    function updateIsNotMobile() {
+      setIsNotMobile(window.innerWidth > 679);
+    }
+    // update when window is resized
+    window.addEventListener('resize', updateIsNotMobile);
+
+    // remove listener when component is unmounted
+    return () => {
+      window.removeEventListener('resize', updateIsNotMobile);
+    };
+  }, []);
+
   return (
     <main className="w-full flex items-center justify-center flex-col">
-      <Header />
-      <Hero />
+      <Header isNotMobile={isNotMobile} />
+      <Hero isNotMobile={isNotMobile} />
       <About />
       <Projects />
       <Contact />
