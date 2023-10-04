@@ -46,11 +46,13 @@ export default function Hero(props) {
         <img
           src={heroImg}
           alt="PHOTO"
-          className="laptop:h-[75vh] desktop:h-[75vh] tablet:h-[50vh] h-fit laptop:pl-[36px] desktop:pl-[36px]"
+          className="laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge animate-heroPhotoSmall laptop:h-[75vh] desktop:h-[75vh] tablet:h-[50vh] h-fit laptop:pl-[36px] desktop:pl-[36px]"
         ></img>
-        <div className="h-full flex flex-col flex-grow items-center justify-center laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left">
-          <p>Hello</p>
-          <h1 className="laptop:text-[44px] desktop:text-[44px] text-[28px] text-orange font-[800] ">
+        <div className="laptop:animate-greetingSlide desktop:animate-greetingSlide animate-greetingSlideSmall h-full flex flex-col flex-grow items-center justify-center laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left">
+          <p className="text-beige border-[1px] border-dashed border-[#f59c8c] px-[8px] py-[4px] rounded-[16px]">
+            Hello
+          </p>
+          <h1 className="laptop:text-[44px] desktop:text-[44px] text-[28px] text-orange drop-shadow-[3px_3px_3px_#f5cac2] font-[800] ">
             I'M AIMEE
           </h1>
           <h2 className="laptop:text-[22px] desktop:text-[22px] text-[16px] text-blue font-[700] ">
