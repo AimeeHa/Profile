@@ -43,10 +43,10 @@ export default {
           '100%': { transform: 'translateX(0%)', opacity: '1' },
         },
         heroPhotoLarge: {
-          '0%': { transform: 'translateX(50%)', opacity: '0.2' },
-          '50%': { transform: 'translateX(50%)', opacity: '0.6' },
-          '75%': { transform: 'translateX(25%)', opacity: '0.85' },
-          '100%': { transform: 'translateX(0%)', opacity: '1' },
+          '0%': { transform: 'translateX(180px)', opacity: '0.2' },
+          '50%': { transform: 'translateX(180px)', opacity: '0.6' },
+          '75%': { transform: 'translateX(90px)', opacity: '0.85' },
+          '100%': { transform: 'translateX(0px)', opacity: '1' },
         },
         heroPhotoSmall: {
           '0%': { transform: 'translateX(10%)', opacity: '0' },
@@ -63,8 +63,8 @@ export default {
     },
     screens: {
       tablet: '680px',
-      laptop: '1024px',
-      desktop: '1280px',
+      laptop: '1274px',
+      desktop: '1366px',
     },
   },
   plugins: [],

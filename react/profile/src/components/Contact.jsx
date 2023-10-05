@@ -4,13 +4,13 @@ export default function Contact() {
       <section
         id="contact"
         name="contact"
-        className="section-root flex-col min-h-max justify-evenly"
+        className="section-root flex-col h-fit py-[36px] justify-evenly"
       >
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
           CONTACT ME
         </h1>
-        <form className="w-1/2 min-w-[320px] min-h-[480px] flex flex-col justify-evenly gap-6 p-[24px] pt-0 bg-[#e6e7f0] rounded-[16px]">
-          <div className="form-div pt-[24px]">
+        <form className="w-[90%] tablet:w-[65%] laptop:w-1/2 desktop:w-1/2 min-h-[420px] flex flex-col justify-evenly gap-6 p-[12px] tablet:p-[24px] laptop:p-[24px] desktop:p-[24px] bg-[#e6e7f0] rounded-[16px]">
+          <div className="form-div">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" />
           </div>

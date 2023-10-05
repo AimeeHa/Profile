@@ -42,23 +42,26 @@ export default function Hero(props) {
         ))}
       </ul>
 
-      <article className="w-full h-full balance flex flex-col-reverse gap-[12px] items-center laptop:flex-row laptop:items-end laptop:gap-[60px] desktop:flex-row desktop:items-end desktop:gap-[60px] justify-center laptop:justify-start desktop:justify-start">
-        <img
-          src={heroImg}
-          alt="PHOTO"
-          className="laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge animate-heroPhotoSmall laptop:h-[75vh] desktop:h-[75vh] tablet:h-[50vh] h-fit laptop:pl-[36px] desktop:pl-[36px]"
-        ></img>
-        <div className="laptop:animate-greetingSlide desktop:animate-greetingSlide animate-greetingSlideSmall h-full flex flex-col flex-grow items-center justify-center laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left">
+      <article className="w-full h-full balance flex flex-col-reverse gap-[12px] items-center laptop:flex-row laptop:items-end laptop:gap-[42px] desktop:flex-row desktop:items-end desktop:gap-[80px] justify-center">
+        <div className="relative flex justify-center tablet:min-w-[500px] laptop:min-w-[550px] desktop:min-w-[700px] laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge animate-heroPhotoSmall">
+          <img
+            src={heroImg}
+            alt="PHOTO"
+            className="z-10 laptop:min-w-fit desktop:min-w-fit laptop:h-[75vh] desktop:h-[75vh] tablet:h-[50vh] h-fit "
+          ></img>
+          <div className="absolute tablet:w-[500px] tablet:h-[500px] laptop:w-[550px] desktop:w-[700px] laptop:h-[550px] desktop:h-[700px] bg-lightbeige rounded-[300px] desktop:rounded-[360px] bottom-[-84px] left-0 "></div>
+        </div>
+        <div className="z-10 laptop:animate-greetingSlide desktop:animate-greetingSlide animate-greetingSlideSmall h-full flex flex-col items-center justify-center laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left">
           <p className="text-beige border-[1px] border-dashed border-[#f59c8c] px-[8px] py-[4px] rounded-[16px]">
             Hello
           </p>
-          <h1 className="laptop:text-[44px] desktop:text-[44px] text-[28px] text-orange drop-shadow-[3px_3px_3px_#f5cac2] font-[800] ">
+          <h1 className="laptop:text-[44px] desktop:text-[50px] text-[28px] text-orange drop-shadow-[3px_3px_3px_#f5cac2] font-[800] ">
             I'M AIMEE
           </h1>
-          <h2 className="laptop:text-[22px] desktop:text-[22px] text-[16px] text-blue font-[700] ">
+          <h2 className="laptop:text-[22px] desktop:text-[26px] text-[16px] text-blue font-[700] ">
             Coding Enthusiast & Aspiring Web Developer
           </h2>
-          <p className="text-lightblue text-[12px] laptop:text-[14px] desktop:text-[14px] font-[450] pt-[6px]">
+          <p className="text-lightblue text-[12px] laptop:text-[14px] desktop:text-[16px] font-[450] pt-[6px]">
             On a journey to deliver web solutions that make a meaningful impact.
           </p>
         </div>
