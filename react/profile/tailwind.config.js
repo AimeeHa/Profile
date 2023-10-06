@@ -52,6 +52,24 @@ export default {
           '0%': { transform: 'translateX(10%)', opacity: '0' },
           '100%': { transform: 'translateX(0%)', opacity: '1' },
         },
+        gradient: {
+          '0%': {
+            backgroundPosition: '0% 50%',
+            background: 'linear-gradient(-45deg, #e6aca3, #faeeeb, #c7c7eb)',
+            backgroundSize: '300% 300%',
+            boxShadow: '-1px -1px 60px 0px rgba(199,199,235,0.5)',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+            boxShadow: '-1px -1px 60px 0px rgba(245,232,226,0.8)',
+          },
+          '100%': {
+            backgroundPosition: '0% 50%',
+            background: 'linear-gradient(-45deg,  #e6aca3, #faeeeb, #c7c7eb)',
+            backgroundSize: '300% 300%',
+            boxShadow: '-1px -1px 60px 0px rgba(199,199,235,0.5)',
+          },
+        },
       },
       animation: {
         scrollTop: 'scrollTop 1s ease-in-out infinite',
@@ -59,6 +77,7 @@ export default {
         greetingSlideSmall: 'greetingSlideSmall 1s linear',
         heroPhotoLarge: 'heroPhotoLarge 2s linear',
         heroPhotoSmall: 'heroPhotoSmall 1s linear',
+        gradient: 'gradient 10s ease infinite',
       },
     },
     screens: {

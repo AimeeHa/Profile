@@ -6,11 +6,17 @@
 
 @layer components {
   .section-root {
-    @apply w-full h-max py-[24px] laptop:h-[calc(100vh-110px)] laptop:py-0 desktop:h-[calc(100vh-120px)] desktop:py-0 tablet:py-[36px] relative flex justify-center items-center gap-6 px-8 tablet:px-12 laptop:px-16 desktop:px-24 bg-primary;
+    @apply w-full h-max py-[24px] laptop:h-[calc(100vh-110px)] laptop:py-0
+    desktop:h-[calc(100vh-120px)] desktop:py-0 tablet:py-[36px]
+    relative flex justify-center items-center gap-6 px-8 tablet:px-12
+    laptop:px-16 desktop:px-24 bg-primary;
   }
 
   .section-title {
-    @apply font-[600] text-[24px] text-center w-screen pt-[32px] laptop:pt-[42px]  desktop:pt-[48px] relative after:absolute after:content-[""] after:w-[52px] after:h-[4px] after:rounded-[12px] after:bg-orange after:left-1/2 after:translate-x-[-50%];
+    @apply font-[600] text-[24px] text-center w-screen pt-[32px]
+    laptop:pt-[42px]  desktop:pt-[48px] relative after:absolute
+    after:content-[""] after:w-[52px] after:h-[4px] after:rounded-[12px]
+    after:bg-orange after:left-1/2 after:translate-x-[-50%];
   }
 
   .form-div {
@@ -23,11 +29,9 @@
 
   .form-div > input,
   .form-div > textarea {
-    @apply w-[calc(100%-24px)] py-[12px] rounded-[8px] bg-white border-[1px] border-solid border-transparent focus:border-blue focus:border-solid focus:border-[1px] focus:outline-none;
-  }
-
-  .download-btn {
-    @apply flex flex-row gap-[4px] items-center justify-center pr-[8px] pl-[12px] py-[2px] border-[1px] border-solid rounded-[18px]  text-primary bg-orange border-orange tablet:w-[152px] hover:bg-blue hover:border-blue hover:text-white hover:cursor-pointer transition ease-in-out duration-300;
+    @apply w-[calc(100%-24px)] py-[12px] rounded-[8px] bg-white border-[1px]
+    border-solid border-transparent focus:border-blue focus:border-solid
+    focus:border-[1px] focus:outline-none;
   }
 }
 

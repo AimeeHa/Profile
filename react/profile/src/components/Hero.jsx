@@ -31,31 +31,67 @@ export default function Hero(props) {
 
   return (
     <section className="section-root pb-0">
-      <ul className="flex flex-col gap-[12px] tablet:gap-[24px] laptop:gap-[24px] desktop:gap-[24px] absolute left-0 top-1/2 translate-y-[-50%] z-10 bg-orange text-white px-[4px] py-[4px] tablet:px-[8px] tablet:py-[8px] laptop:px-[8px] laptop:py-[8px] desktop::px-[8px] desktop::py-[8px] rounded-[0px_8px_8px_0px] shadow-[0px_1px_12px_-2px_#2e3179c9]">
+      <ul
+        className="flex flex-col gap-[12px] tablet:gap-[24px] laptop:gap-[24px] desktop:gap-[24px]
+      absolute left-0 top-1/2 translate-y-[-50%] z-10 bg-orange text-white px-[4px]
+      py-[4px] tablet:px-[8px] tablet:py-[8px] laptop:px-[8px] laptop:py-[8px] desktop::px-[8px]
+      desktop::py-[8px] rounded-[0px_8px_8px_0px] shadow-[0px_1px_12px_-2px_#2e3179c9]"
+      >
         {links.map((link, i) => (
           <li
             key={i}
-            className="cursor-pointer flex items-center justify-center rounded-[8px] hover:translate-y-[-2px] hover:shadow-[0px_1px_12px_-1px_rgba(255,255,255,.6)] transition ease-in-out duration-300 "
+            className="cursor-pointer flex items-center justify-center rounded-[8px]
+            hover:translate-y-[-2px] hover:scale-[1.2] hover:transition hover:ease-in-out
+            hover:duration-300 transition ease-in-out duration-300 "
           >
             <a href={link.link}>{link.icon}</a>
           </li>
         ))}
       </ul>
 
-      <article className="w-full h-full balance flex flex-col-reverse gap-[12px] items-center laptop:flex-row laptop:items-end laptop:gap-[42px] desktop:flex-row desktop:items-end desktop:gap-[80px] justify-center">
-        <div className="relative flex justify-center tablet:min-w-[500px] laptop:min-w-[550px] desktop:min-w-[700px] laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge animate-heroPhotoSmall">
+      <article
+        className="w-full h-full balance flex flex-col-reverse gap-[12px] items-center
+      laptop:flex-row laptop:items-end laptop:gap-[42px] desktop:flex-row desktop:items-end
+      desktop:gap-[80px] justify-center"
+      >
+        <div
+          className="relative flex justify-center tablet:min-w-[500px] laptop:min-w-[550px]
+        desktop:min-w-[700px] laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge
+        animate-heroPhotoSmall"
+        >
           <img
             src={heroImg}
             alt="PHOTO"
-            className="z-10 laptop:min-w-fit desktop:min-w-fit laptop:h-[75vh] desktop:h-[75vh] tablet:h-[50vh] h-fit "
+            className="z-10 laptop:min-w-fit desktop:min-w-fit laptop:h-[75vh] desktop:h-[75vh]
+            tablet:h-[50vh] h-fit "
           ></img>
-          <div className="absolute tablet:w-[500px] tablet:h-[500px] laptop:w-[550px] desktop:w-[700px] laptop:h-[550px] desktop:h-[700px] bg-lightbeige rounded-[300px] desktop:rounded-[360px] bottom-[-84px] left-0 "></div>
+          <div
+            className="absolute tablet:w-[500px] tablet:h-[500px] laptop:w-[550px]
+          desktop:w-[700px] laptop:h-[550px] desktop:h-[700px] bg-lightbeige rounded-[300px]
+          desktop:rounded-[360px] bottom-[-84px] left-0 animate-gradient"
+          ></div>
         </div>
-        <div className="z-10 laptop:animate-greetingSlide desktop:animate-greetingSlide animate-greetingSlideSmall h-full flex flex-col items-center justify-center laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left">
-          <p className="text-beige border-[1px] border-dashed border-[#f59c8c] px-[8px] py-[4px] rounded-[16px]">
-            Hello
+        <div
+          className="z-10 laptop:animate-greetingSlide desktop:animate-greetingSlide
+        animate-greetingSlideSmall h-full flex flex-col items-center justify-center
+        laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left"
+        >
+          <p
+            className="text-blue px-[12px] py-[4px] rounded-[16px] text-[14px] relative
+          after:animate-gradient after:absolute after:top-0 after:left-1/2 after:translate-x-[-50%]
+          after:-z-10 after:h-[30px] after:w-[64px] after:rounded-[16px] tablet:after:animate-none
+          laptop:after:animate-none desktop:after:animate-none tablet:text-beige laptop:text-beige
+          desktop:text-beige tablet:border-[1px] tablet:border-dashed tablet:border-[#f59c8c]
+          laptop:border-[1px] laptop:border-dashed laptop:border-[#f59c8c] desktop:border-[1px]
+          desktop:border-dashed desktop:border-[#f59c8c] tablet:animate-none laptop:animate-none
+          desktop:animate-none"
+          >
+            Hello!
           </p>
-          <h1 className="laptop:text-[44px] desktop:text-[50px] text-[28px] text-orange drop-shadow-[3px_3px_3px_#f5cac2] font-[800] ">
+          <h1
+            className="laptop:text-[44px] desktop:text-[50px] text-[28px] text-orange
+          drop-shadow-[3px_3px_3px_#f5cac2] font-[800] "
+          >
             I'M AIMEE
           </h1>
           <h2 className="laptop:text-[22px] desktop:text-[26px] text-[16px] text-blue font-[700] ">
