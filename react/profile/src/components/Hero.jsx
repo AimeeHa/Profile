@@ -77,7 +77,7 @@ export default function Hero(props) {
         laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left"
         >
           <p
-            className="text-blue px-[12px] py-[4px] rounded-[16px] text-[14px] relative
+            className="text-blue px-[12px] py-[4px] rounded-[16px] text-[14px] font-[500] relative
           after:animate-gradient after:absolute after:top-0 after:left-1/2 after:translate-x-[-50%]
           after:-z-10 after:h-[30px] after:w-[64px] after:rounded-[16px] tablet:after:animate-none
           laptop:after:animate-none desktop:after:animate-none tablet:text-beige laptop:text-beige

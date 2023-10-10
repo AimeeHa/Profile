@@ -64,6 +64,16 @@ export default {
             boxShadow: '-1px -1px 60px 0px rgba(199,199,235,0.5)',
           },
         },
+        textReveal: {
+          '0%': {
+            transform: 'translate(0, -30%)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translate(0, 0)',
+            opacity: '1',
+          },
+        },
       },
       animation: {
         scrollTop: 'scrollTop 1s ease-in-out infinite',
@@ -72,6 +82,7 @@ export default {
         heroPhotoLarge: 'heroPhotoLarge 2s linear',
         heroPhotoSmall: 'heroPhotoSmall 1s linear',
         gradient: 'gradient 10s ease infinite',
+        textReveal: 'textReveal 1s cubic-bezier(0.77,0,0.175,1)',
       },
     },
     screens: {

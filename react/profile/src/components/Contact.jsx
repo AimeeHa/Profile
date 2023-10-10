@@ -1,10 +1,12 @@
+import styles from '../statics/styles';
+
 export default function Contact() {
   return (
     <>
       <section
         id="contact"
         name="contact"
-        className="section-root flex-col h-fit py-[36px] justify-evenly"
+        className="section-root flex-col py-[36px] "
       >
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
           CONTACT ME
@@ -24,7 +26,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="self-end w-max mr-[12px] px-[16px] py-[4px] rounded-[16px] bg-orange text-primary hover:cursor-pointer hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)] hover:translate-y-[-1px] transition ease-in-out duration-300"
+            className={`self-end mr-[12px] ${styles.orangeBtn}`}
           >
             Send
           </button>
