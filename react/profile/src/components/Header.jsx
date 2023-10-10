@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
+import styles from '../statics/styles';
 
 export default function Header(props) {
   const navItems = ['about', 'projects', 'contact'];
@@ -41,25 +42,24 @@ export default function Header(props) {
       hover:bg-orange hover:border-orange hover:cursor-pointer"
     >
       <span
-        className="flex items-center justify-center bg-blue text-primary
+        className={`flex items-center justify-center bg-blue text-primary
           absolute h-[32px] w-[32px] top-[1px] left-[1px] rounded-[50%]
           group-hover:left-[calc(100%-34px)]
-        group-hover:bg-primary group-hover:text-orange"
+        group-hover:bg-primary group-hover:text-orange ${styles.downloadTransition} duration-300
+          group-hover:duration-300`}
       >
         <DownloadRoundedIcon />
         {/* TODO: attached file and allow download */}
       </span>
       <span
-        className="absolute right-[12px] flex items-center justify-center h-full
-          m-[0px,auto] text-[16px] font-[600] text-blue transition
-          duration-500 group-hover:left-[12px] group-hover:opacity-0 "
+        className={`${styles.downloadTextSpan} right-[12px] text-blue
+          group-hover:opacity-0 ${styles.downloadTransition}`}
       >
         Download CV
       </span>
       <span
-        className="absolute left-[50px] flex items-center justify-center h-full
-          m-[0px,auto] opacity-0 text-[16px] font-[600] text-primary transition
-          duration-500 group-hover:left-[12px] group-hover:opacity-100"
+        className={`${styles.downloadTextSpan} left-[50px] opacity-0 text-primary
+          group-hover:opacity-100 ${styles.downloadTransition}`}
       >
         Click to start
       </span>
@@ -69,7 +69,7 @@ export default function Header(props) {
   return (
     <>
       <nav
-        className="w-full h-[100px] flex items-center bg-primary text-blue font-title
+        className="w-full h-[100px] flex items-center bg-primary text-blue font-[500]
         py-4 px-4 justify-between laptop:px-24 laptop:h-[110px]
         desktop:px-24 desktop:h-[120px]
         tablet:px-12 tablet:h-[110px] tablet:text-[16px]"

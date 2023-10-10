@@ -24,7 +24,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="download-btn self-end w-max px-[16px] py-[4px]"
+            className="self-end w-max mr-[12px] px-[16px] py-[4px] rounded-[16px] bg-orange text-primary hover:cursor-pointer hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)] hover:translate-y-[-1px] transition ease-in-out duration-300"
           >
             Send
           </button>

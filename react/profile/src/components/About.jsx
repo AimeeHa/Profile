@@ -4,14 +4,15 @@ export default function About() {
       <section
         id="about"
         name="about"
-        className="section-root flex-col px-0 gap-6 pt-0"
+        className="section-root flex-col h-fit py-[36px] justify-evenly"
       >
-        <article className="w-[100%] h-[30%] bg-orange px-8  tablet:px-12 laptop:px-16 desktop:px-24">
-          Skills
-        </article>
-        <article className="w-[100%] h-[70%] px-8 tablet:px-12 laptop:px-16 desktop:px-24">
-          Others
-        </article>
+        <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
+          ABOUT ME
+        </h1>
+        <div className="w-full min-h-[420px] flex flex-row items-center justify-evenly">
+          <div className="">Others</div>
+          <div className="">Skills</div>
+        </div>
       </section>
     </>
   );

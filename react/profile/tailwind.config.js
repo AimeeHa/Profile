@@ -21,12 +21,6 @@ export default {
         blue: '#303179',
         darkblue: '#141850',
       },
-      fontSize: {
-        title: '18px',
-      },
-      fontWeight: {
-        title: '500',
-      },
       keyframes: {
         scrollTop: {
           '0%': { transform: 'translateY(15%)', opacity: '0' },
