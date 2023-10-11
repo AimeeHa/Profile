@@ -6,7 +6,7 @@ export default function Contact() {
       <section
         id="contact"
         name="contact"
-        className="section-root flex-col py-[36px] "
+        className="section-root h-max flex-col py-[36px] "
       >
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
           CONTACT ME
@@ -14,7 +14,7 @@ export default function Contact() {
         <form
           className="w-[90%] tablet:w-[65%] laptop:w-1/2 desktop:w-1/2 min-h-[460px]
         flex flex-col justify-evenly gap-6 p-[12px] tablet:p-[24px] laptop:p-[24px]
-        desktop:p-[24px] bg-[#e6e7f0] rounded-[16px]"
+        desktop:p-[24px] bg-[#e6e7f0] rounded-[16px] mb-[12px]"
         >
           <div className="form-div">
             <label htmlFor="name">Name</label>
