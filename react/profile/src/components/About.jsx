@@ -1,7 +1,6 @@
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import styles, { wavingLetters } from '../statics/styles';
 
 export default function About() {
-  const talk = "Let's Talk";
   const skills = [
     'React',
     'Typescript',
@@ -88,10 +87,7 @@ export default function About() {
               </ul>
             </div>
             <button
-              className="group text-orange laptop:mb-[20%] desktop:mb-[20%] flex justify-center
-            items-center cursor-pointer relative transition ease-in-out duration-300 after:absolute
-            after:content-[''] after:w-[calc(100%-28px)] after:h-[2px] after:rounded-[8px]
-            after:bg-orange after:left-[2px] after:top-[24px] hover:after:bg-transparent"
+              className={`laptop:mb-[20%] desktop:mb-[20%] ${styles.wavingAfter}`}
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('contact').scrollIntoView({
@@ -100,21 +96,7 @@ export default function About() {
                 });
               }}
             >
-              {/* loop over a string talk */}
-              {talk.split('').map((char, index) => (
-                <span
-                  className="group-hover:animate-textReveal inline-block [animation-fill-mode:backwards]"
-                  key={`${char}-${index}`}
-                  style={{ animationDelay: `${index * 0.03}s` }}
-                >
-                  {char === ' ' ? '\u00A0' : char}
-                </span>
-              ))}
-              <KeyboardArrowDownIcon
-                className="group-hover:animate-textReveal inline-block
-              [animation-fill-mode:backwards]"
-                style={{ animationDelay: '0.35s' }}
-              />
+              {wavingLetters("Let's Talk")}
             </button>
           </article>
         </article>

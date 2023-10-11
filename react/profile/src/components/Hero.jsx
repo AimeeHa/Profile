@@ -3,6 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import hero from '../assets/hero.png';
 import hero2 from '../assets/hero2.png';
+import styles, { wavingLetters } from '../statics/styles';
 
 const links = [
   {
@@ -54,7 +55,7 @@ export default function Hero(props) {
       laptop:flex-row laptop:items-end laptop:gap-[42px] desktop:flex-row desktop:items-end
       desktop:gap-[80px] justify-center"
       >
-        <div
+        <article
           className="relative flex justify-center tablet:min-w-[500px] laptop:min-w-[550px]
         desktop:min-w-[700px] laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge
         animate-heroPhotoSmall"
@@ -70,8 +71,8 @@ export default function Hero(props) {
           desktop:w-[700px] laptop:h-[550px] desktop:h-[700px] bg-lightbeige rounded-[300px]
           desktop:rounded-[360px] bottom-[-84px] left-0 animate-gradient"
           ></div>
-        </div>
-        <div
+        </article>
+        <article
           className="z-10 laptop:animate-greetingSlide desktop:animate-greetingSlide
         animate-greetingSlideSmall h-full flex flex-col items-center justify-center
         laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left"
@@ -100,7 +101,34 @@ export default function Hero(props) {
           <p className="text-lightblue text-[12px] laptop:text-[14px] desktop:text-[16px] font-[450] pt-[6px]">
             On a journey to deliver web solutions that make a meaningful impact.
           </p>
-        </div>
+          {props.isNotMobile ? (
+            <button
+              className={`${styles.orangeBtn} laptop:mt-[24px] desktop:mt-[24px] tablet:mt-[16px]`}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects').scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                });
+              }}
+            >
+              Explore My Projects
+            </button>
+          ) : (
+            <button
+              className={`text-[14px] mt-[8px] font-[500] ${styles.wavingAfter}`}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects').scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                });
+              }}
+            >
+              {wavingLetters('Explore My Projects')}
+            </button>
+          )}
+        </article>
       </article>
     </section>
   );
