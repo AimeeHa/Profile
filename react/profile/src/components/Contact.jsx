@@ -12,21 +12,27 @@ export default function Contact() {
           CONTACT ME
         </h1>
         <form
-          className="w-[90%] tablet:w-[65%] laptop:w-1/2 desktop:w-1/2 min-h-[460px]
+          className="w-full tablet:w-[65%] laptop:w-1/2 desktop:w-1/2 min-h-[460px]
         flex flex-col justify-evenly gap-6 p-[12px] tablet:p-[24px] laptop:p-[24px]
         desktop:p-[24px] bg-[#e6e7f0] rounded-[16px] mb-[12px]"
         >
-          <div className="form-div">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" />
+          <div className={styles.formDiv}>
+            <label className={styles.formLabel} htmlFor="name">
+              Name
+            </label>
+            <input className={styles.formInput} type="text" id="name" />
           </div>
-          <div className="form-div">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" />
+          <div className={styles.formDiv}>
+            <label className={styles.formLabel} htmlFor="email">
+              Email
+            </label>
+            <input className={styles.formInput} type="email" id="email" />
           </div>
-          <div className="form-div">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" rows={3} />
+          <div className={styles.formDiv}>
+            <label className={styles.formLabel} htmlFor="message">
+              Message
+            </label>
+            <textarea className={styles.formInput} id="message" rows={3} />
           </div>
           <button
             type="submit"

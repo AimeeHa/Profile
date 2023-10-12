@@ -9,6 +9,10 @@ const styles = {
     'group text-orange flex justify-center items-center cursor-pointer relative transition ease-in-out duration-300 after:absolute after:content-[""] after:w-[calc(100%-28px)] after:h-[2px] after:rounded-[8px] after:bg-orange after:left-[2px] after:top-[22px] hover:after:bg-transparent',
   groupTransition:
     'transition ease-in-out duration-300 group-hover:transition group-hover:ease-in-out group-hover:duration-300',
+  formDiv: 'w-full h-full flex flex-col justify-center items-center gap-2',
+  formLabel: 'w-full px-[12px] text-blue font-[550]',
+  formInput:
+    'w-[calc(100%-24px)] p-[12px] rounded-[8px] bg-white text-lightblue font-[400] focus:text-blue focus:font-[500] border-[2px] border-solid border-transparent focus:border-blue focus:border-solid focus:border-[2px] focus:outline-none',
 };
 
 export default styles;
