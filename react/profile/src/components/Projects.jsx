@@ -47,7 +47,7 @@ export default function Projects() {
                 <h2 className="font-[600] text-[18px] text-orange">
                   {project.name}
                 </h2>
-                <p className="font-[500] text-[14px] text-lightblue text-center">
+                <p className="font-[500] text-[14px] text-lightblue text-center px-[12px] balance">
                   {project.summary}
                 </p>
               </article>
@@ -74,7 +74,11 @@ export default function Projects() {
                   </h3>
                   <ul className="text-[14px] desktop:text-[15px] flex flex-col gap-[4px] opacity-90">
                     {project.description.map((item, i) => {
-                      return <li key={i}>{item}</li>;
+                      return (
+                        <li key={i} className="mt-[4px]">
+                          {item}
+                        </li>
+                      );
                     })}
                   </ul>
 
@@ -82,7 +86,7 @@ export default function Projects() {
                     className="mt-[20px] self-start font-[600] text-[15px] tablet:text-[16px]
                   laptop:text-[16px] desktop:text-[17px]"
                   >
-                    Tech Stacks
+                    Tech Stack
                   </h3>
                   <p className="text-[14px] desktop:text-[15px] opacity-90">
                     {project.tech.map((item, i) => {
