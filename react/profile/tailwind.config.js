@@ -88,7 +88,7 @@ export default {
     screens: {
       tablet: '680px',
       laptop: '1274px',
-      desktop: '1366px',
+      desktop: '1480px',
     },
   },
   plugins: [],

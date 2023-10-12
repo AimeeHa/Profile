@@ -7,8 +7,8 @@ export default function Projects() {
       <section
         id="projects"
         name="projects"
-        className="block h-max desktop:h-[calc(100vh-120px)] overflow-x-scroll bg-darkblue
-        w-full p-[24px_24px_36px] tablet:p-[36px_36px_48px] laptop:p-[36px_36px_48px]
+        className="block h-max overflow-x-scroll bg-darkblue
+        w-full p-[24px_24px_36px] tablet:p-[36px_36px_48px] laptop:p-[42px_42px_54px]
         desktop:p-[48px_48px_60px] "
       >
         <h1
@@ -20,7 +20,7 @@ export default function Projects() {
         </h1>
         <ul
           name="projects-list"
-          className="min-w-min bg-darkblue gap-[24px] laptop:gap-[36px]
+          className="min-w-min bg-darkblue gap-[24px] laptop:gap-[42px]
           desktop:gap-[48px] p-0 relative flex justify-center items-center tablet:gap-[36px]"
         >
           {projects.map((project, i) => (
@@ -58,11 +58,20 @@ export default function Projects() {
                 flex flex-col justify-center items-center h-full w-full p-[24px] gap-[24px]`}
               >
                 <h2 className="font-[600] text-[18px]">{project.name}</h2>
-                <p>{project.description}</p>
+                <ul className="font-[500] flex flex-col gap-[4px]">
+                  {project.description.map((item, i) => {
+                    return <li key={i}>{item}</li>;
+                  })}
+                </ul>
                 <p>
-                  Tech Stacks:{' '}
+                  <b>Tech Stacks:</b>{' '}
                   {project.tech.map((item, i) => {
-                    return <span key={i}>{item} </span>;
+                    return (
+                      <span key={i}>
+                        {item}
+                        {i < project.tech.length ? ', ' : ''}
+                      </span>
+                    );
                   })}
                 </p>
                 <a
