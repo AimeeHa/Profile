@@ -21,6 +21,9 @@ export default {
         blue: '#303179',
         darkblue: '#141850',
       },
+      fontFamily: {
+        footer: ['Rochester', 'cursive'],
+      },
       keyframes: {
         scrollTop: {
           '0%': { transform: 'translateY(15%)', opacity: '0' },

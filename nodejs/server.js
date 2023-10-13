@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Hello from App Engine!' });
+app.post('/api/contact', (req, res) => {
+  if (req.query.name === '') {
+    return res.status(400).send({ message: 'Name is required' });
+  }
+  res.send({ message: 'Message Received!' });
 });
 
 app.listen(8000, () => {

@@ -1,31 +1,7 @@
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+import links from '../statics/links';
 import hero from '../assets/hero.png';
 import hero2 from '../assets/hero2.png';
 import styles, { wavingLetters } from '../statics/styles';
-
-const links = [
-  {
-    icon: <LinkedInIcon style={{ width: '40px', height: '40px' }} />,
-    link: 'https://www.linkedin.com/in/thuong-ha-719308116',
-  },
-  {
-    icon: (
-      <GitHubIcon
-        style={{
-          width: '35px',
-          height: '40px',
-        }}
-      />
-    ),
-    link: 'https://github.com/AimeeHa',
-  },
-  {
-    icon: <EmailRoundedIcon style={{ width: '35px', height: '35px' }} />,
-    link: 'mailto:aimee.ha95@gmail.com',
-  },
-];
 
 export default function Hero(props) {
   const heroImg = props.isNotMobile ? hero : hero2;

@@ -10,9 +10,10 @@ const styles = {
   groupTransition:
     'transition ease-in-out duration-300 group-hover:transition group-hover:ease-in-out group-hover:duration-300',
   formDiv: 'w-full h-full flex flex-col justify-center items-center gap-2',
-  formLabel: 'w-full px-[12px] text-blue font-[550]',
+  formLabel:
+    'w-full px-[12px] text-blue font-[550] text-[13px] tablet:text-[14px] laptop:text-[14px] desktop:text-[15px]',
   formInput:
-    'w-[calc(100%-24px)] p-[12px] rounded-[8px] bg-white text-lightblue font-[400] focus:text-blue focus:font-[500] border-[2px] border-solid border-transparent focus:border-blue focus:border-solid focus:border-[2px] focus:outline-none',
+    'w-[calc(100%-24px)] p-[12px] rounded-[8px] bg-white text-[14px] tablet:text-[15px] laptop:text-[15px] desktop:text-[16px] text-lightblue font-[400] focus:text-blue focus:font-[500] border-[2px] border-solid border-transparent focus:border-blue focus:border-solid focus:border-[2px] focus:outline-none',
 };
 
 export default styles;
