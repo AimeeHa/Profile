@@ -44,7 +44,7 @@ export default function Hero(props) {
           ></img>
           <div
             className="absolute tablet:w-[500px] tablet:h-[500px] laptop:w-[550px]
-          desktop:w-[700px] laptop:h-[550px] desktop:h-[700px] bg-lightbeige rounded-[300px]
+          desktop:w-[700px] laptop:h-[550px] desktop:h-[700px] bg-lightbeige rounded-[50%]
           desktop:rounded-[360px] bottom-[-84px] left-0 animate-gradient"
           ></div>
         </article>
