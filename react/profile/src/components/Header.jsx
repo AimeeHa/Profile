@@ -39,7 +39,8 @@ export default function Header(props) {
       className="group relative inline-block h-[38px] w-[160px]
         leading-[18px] p-0 rounded-[500px] bg-primary
         transition ease-in-out border-[2px] border-blue border-solid
-      hover:bg-orange hover:border-orange hover:cursor-pointer"
+      hover:bg-orange hover:border-orange hover:cursor-pointer
+        hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)]"
     >
       <a href="/MyCV.pdf" download="AimeeHa-CV.pdf">
         <span
