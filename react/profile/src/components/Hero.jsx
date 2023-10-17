@@ -28,24 +28,21 @@ export default function Hero(props) {
 
       <article
         className="w-full h-full balance flex flex-col-reverse gap-[12px] items-center
-      laptop:flex-row laptop:items-end laptop:gap-[42px] desktop:flex-row desktop:items-end
-      desktop:gap-[80px] justify-center"
+      laptop:flex-row laptop:items-end laptop:gap-[86px] desktop:gap-[100px] justify-center"
       >
         <article
-          className="relative flex justify-center tablet:min-w-[500px] laptop:min-w-[550px]
-        desktop:min-w-[700px] laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge
+          className="relative flex justify-center laptop:animate-heroPhotoLarge desktop:animate-heroPhotoLarge
         animate-heroPhotoSmall"
         >
           <img
             src={heroImg}
             alt="PHOTO"
-            className="z-10 laptop:min-w-fit desktop:min-w-fit laptop:h-[75vh] desktop:h-[75vh]
-            tablet:h-[50vh] h-fit "
+            className="z-10 laptop:min-w-auto desktop:min-w-auto laptop:h-[75vh] desktop:h-[75vh]
+            tablet:h-[50vh] h-auto"
           ></img>
           <div
-            className="absolute tablet:w-[500px] tablet:h-[500px] laptop:w-[550px]
-          desktop:w-[700px] laptop:h-[550px] desktop:h-[700px] bg-lightbeige rounded-[50%]
-          desktop:rounded-[360px] bottom-[-84px] left-0 animate-gradient"
+            className="absolute bg-lightbeige rounded-[50%] bottom-[-56px] tablet:bottom-[-84px] animate-gradient
+            w-[110%] h-auto aspect-square left-[-5%] tablet:w-[130%] tablet:left-[-15%]"
           ></div>
         </article>
         <article
@@ -54,14 +51,8 @@ export default function Hero(props) {
         laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left"
         >
           <p
-            className="text-blue px-[12px] py-[4px] rounded-[16px] text-[14px] font-[500] relative
-          after:animate-gradient after:absolute after:top-0 after:left-1/2 after:translate-x-[-50%]
-          after:-z-10 after:h-[30px] after:w-[64px] after:rounded-[16px] tablet:after:animate-none
-          laptop:after:animate-none desktop:after:animate-none tablet:text-beige laptop:text-beige
-          desktop:text-beige tablet:border-[1px] tablet:border-dashed tablet:border-[#f59c8c]
-          laptop:border-[1px] laptop:border-dashed laptop:border-[#f59c8c] desktop:border-[1px]
-          desktop:border-dashed desktop:border-[#f59c8c] tablet:animate-none laptop:animate-none
-          desktop:animate-none"
+            className="px-[12px] py-[4px] rounded-[16px] text-[14px] font-[500] relative
+          text-beige  border-[1px] border-dashed border-[#f59c8c]"
           >
             Hello!
           </p>
