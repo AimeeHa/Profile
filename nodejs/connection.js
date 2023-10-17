@@ -4,7 +4,7 @@ const { password } = require('./config');
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'thongminh',
+  password: password,
   database: 'profile',
 });
 
