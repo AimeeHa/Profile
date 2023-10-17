@@ -41,7 +41,7 @@ export default function Header(props) {
         transition ease-in-out border-[2px] border-blue border-solid
       hover:bg-orange hover:border-orange hover:cursor-pointer"
     >
-      <a href="../public/MyCV.pdf" download="AimeeHa-CV.pdf">
+      <a href="/MyCV.pdf" download="AimeeHa-CV.pdf">
         <span
           className={`flex items-center justify-center bg-blue text-primary
           absolute h-[32px] w-[32px] top-[1px] left-[1px] rounded-[50%]

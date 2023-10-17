@@ -31,7 +31,7 @@ export default function Contact() {
           setFormData({ name: '', email: '', message: '' });
           setConfirmation(0);
           setIsDisplay(false);
-        }, 2000);
+        }, 2500);
       } else {
         setConfirmation(400);
         setIsDisplay(true);
