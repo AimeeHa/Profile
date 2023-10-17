@@ -41,29 +41,28 @@ export default function Header(props) {
         transition ease-in-out border-[2px] border-blue border-solid
       hover:bg-orange hover:border-orange hover:cursor-pointer"
     >
-      <span
-        className={`flex items-center justify-center bg-blue text-primary
+      <a href="../public/MyCV.pdf" download="AimeeHa-CV.pdf">
+        <span
+          className={`flex items-center justify-center bg-blue text-primary
           absolute h-[32px] w-[32px] top-[1px] left-[1px] rounded-[50%]
           group-hover:left-[calc(100%-34px)]
         group-hover:bg-primary group-hover:text-orange ${styles.groupTransition}`}
-      >
-        <a href="../assets/MyCV.pdf" download="AimeeHa-CV.pdf">
+        >
           <DownloadRoundedIcon />
-        </a>
-        {/* TODO: attached file and allow download */}
-      </span>
-      <span
-        className={`${styles.downloadTextSpan} right-[12px] text-blue
+        </span>
+        <span
+          className={`${styles.downloadTextSpan} right-[12px] text-blue
           group-hover:opacity-0 ${styles.groupTransition}`}
-      >
-        Download CV
-      </span>
-      <span
-        className={`${styles.downloadTextSpan} left-[50px] opacity-0 text-primary
+        >
+          Download CV
+        </span>
+        <span
+          className={`${styles.downloadTextSpan} left-[50px] opacity-0 text-primary
           group-hover:opacity-100 ${styles.groupTransition}`}
-      >
-        Click to start
-      </span>
+        >
+          Click to start
+        </span>
+      </a>
     </div>
   );
 
