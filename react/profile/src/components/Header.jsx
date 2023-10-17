@@ -47,7 +47,9 @@ export default function Header(props) {
           group-hover:left-[calc(100%-34px)]
         group-hover:bg-primary group-hover:text-orange ${styles.groupTransition}`}
       >
-        <DownloadRoundedIcon />
+        <a href="../assets/MyCV.pdf" download="AimeeHa-CV.pdf">
+          <DownloadRoundedIcon />
+        </a>
         {/* TODO: attached file and allow download */}
       </span>
       <span
