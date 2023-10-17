@@ -62,7 +62,7 @@ export default function Hero(props) {
           >
             I'M AIMEE
           </h1>
-          <h2 className="laptop:text-[22px] desktop:text-[26px] text-[16px] text-blue font-[700] ">
+          <h2 className="laptop:text-[22px] desktop:text-[26px] text-[16px] text-blue font-[600] ">
             Coding Enthusiast & Aspiring Web Developer
           </h2>
           <p className="text-lightblue text-[13px] laptop:text-[14px] desktop:text-[16px] font-[450] pt-[6px]">

@@ -39,10 +39,10 @@ export default function About() {
           desktop:whitespace-normal"
           >
             <p>
-              Hi! I'm <span className="text-blue font-[650]">Aimee</span>, a
+              Hi! I'm <span className="text-blue font-[600]">Aimee</span>, a
               former Management Accountant with a passion for Software
               Engineering, especially{' '}
-              <span className="text-blue font-[650]">Web Development</span>.
+              <span className="text-blue font-[600]">Web Development</span>.
             </p>
             <p>
               My coding odyssey kicked off with the renowned CS50's Introduction
@@ -71,7 +71,7 @@ export default function About() {
               className="flex flex-col gap-[24px] items-center tablet:items-start laptop:items-start
               desktop:items-start"
             >
-              <h2 className="text-[18px] font-[650]">My Skills</h2>
+              <h2 className="text-[18px] font-[600]">My Skills</h2>
               <ul
                 className="w-full flex flex-wrap gap-[12px] tablet:gap-[24px]
               laptop:gap-[24px] desktop:gap-[24px]"
