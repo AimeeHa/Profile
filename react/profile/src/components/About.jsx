@@ -9,7 +9,7 @@ export default function About() {
     'Python',
     'Django',
     'Javascript',
-    'NodeJS',
+    'Node.js',
     'SQL',
     'Git',
     'Figma',

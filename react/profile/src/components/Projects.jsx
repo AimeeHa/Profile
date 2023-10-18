@@ -7,7 +7,7 @@ export default function Projects() {
       <section
         id="projects"
         name="projects"
-        className="block h-max desktop:h-[calc(100vh-120px)] overflow-x-scroll bg-darkblue
+        className="block h-max overflow-x-scroll bg-darkblue
         w-full p-[24px_24px_36px] tablet:p-[36px_36px_48px] laptop:p-[42px_42px_54px]
         desktop:p-[48px_48px_60px] "
       >

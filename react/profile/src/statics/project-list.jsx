@@ -39,11 +39,11 @@ const projects = [
   {
     name: 'Portfolio',
     description: [
-      'This website serves as a canvas for my newfound proficiency in Tailwind CSS and NodeJS.',
+      'This website serves as a canvas for my newfound proficiency in Tailwind CSS and Node.js.',
       "It's the platform where I proudly display a collection of my personal projects, offering a glimpse into my evolving skills and the inventive ventures that have enriched my portfolio.",
     ],
     summary: "This delightful website you're currently browsing",
-    tech: ['React', 'Javascript', 'Tailwind CSS', 'NodeJS', 'MySQL', 'Git'],
+    tech: ['React', 'Javascript', 'Tailwind CSS', 'Node.js', 'MySQL', 'Git'],
     img: portfolio,
     link: '/',
   },
@@ -55,7 +55,7 @@ const projects = [
       "It's all about making your travel experiences smoother and more memorable.",
     ],
     summary: 'Your ultimate travel planning companion, powered by ChatGPT',
-    tech: ['React', 'Typescript', 'NodeJS', 'Tailwind CSS'],
+    tech: ['React', 'Typescript', 'Node.js', 'Tailwind CSS'],
     img: tripplanner,
     link: 'https://github.com/AimeeHa/TripPlanner',
   },
