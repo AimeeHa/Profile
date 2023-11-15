@@ -37,8 +37,7 @@ export default function Projects() {
                 src={project.img}
                 alt={project.name}
                 className={`${styles.groupTransition} group-hover:opacity-5 text-blue
-                w-full h-[320px] tablet:h-[420px] laptop:h-[440px] desktop:h-[480px]
-                rounded-[8px]`}
+                w-full h-[320px] tablet:h-[420px] laptop:h-[440px] desktop:h-[480px]`}
               />
               <article
                 className={`${styles.groupTransition} group-hover:opacity-0

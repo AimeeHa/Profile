@@ -2,6 +2,7 @@ import flashcard from '../assets/flashcard.png';
 import littlelemon from '../assets/littlelemon.png';
 import portfolio from '../assets/portfolio.png';
 import tripplanner from '../assets/tripplanner.png';
+import ryalto from '../assets/ryalto.png';
 
 const projects = [
   {
@@ -46,6 +47,17 @@ const projects = [
     tech: ['React', 'Javascript', 'Tailwind CSS', 'Node.js', 'MySQL', 'Git'],
     img: portfolio,
     link: '/',
+  },
+  {
+    name: "Ryalto's Developer Page",
+    description: [
+      'This project was done as part of a coding challenge for Ryalto, a healthcare startup based in the UK.',
+      'The task was to improve the existing developer page (https://developer.ryalto.group/), give it better UX/UI and a more sematic HTML.',
+    ],
+    summary: "A design and coding challenge for Ryalto's developer page",
+    tech: ['Javascript', 'HTML', 'CSS', 'Figma', 'Git'],
+    img: ryalto,
+    link: 'https://github.com/AimeeHa/Ryalto',
   },
   {
     name: 'Trip Planner',
