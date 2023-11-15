@@ -66,7 +66,7 @@ const projects = [
       'The vision is to assist users in crafting detailed trip itineraries for their upcoming travels with minimal input—just specify your destination, the number of days, and your preferred activities. The future plan includes integrating Gmail for seamless registration and login, and even generating calendar invites to ensure you have your itinerary readily accessible at your fingertips.',
       "It's all about making your travel experiences smoother and more memorable.",
     ],
-    summary: 'Your ultimate travel planning companion, powered by ChatGPT',
+    summary: 'Your ultimate travel planning companion, powered by OpenAI',
     tech: ['React', 'Typescript', 'Node.js', 'Tailwind CSS'],
     img: tripplanner,
     link: 'https://github.com/AimeeHa/TripPlanner',
