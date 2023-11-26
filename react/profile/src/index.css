@@ -28,6 +28,7 @@
 
 :root {
   font-family: 'Quicksand', sans-serif;
+  scroll-padding-top: 65px;
 }
 
 .balance {
