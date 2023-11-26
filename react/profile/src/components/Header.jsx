@@ -48,8 +48,9 @@ export default function Header(props) {
       <a href="/MyCV.pdf" download="AimeeHa-CV.pdf">
         <span
           className={`flex items-center justify-center bg-blue text-primary
-          absolute h-[28px] w-[28px] desktop:h-[33px] desktop:w-[33px] top-1/2 translate-y-[-50%] left-[1px]
-          rounded-[50%] group-hover:left-[calc(100%-29px)]
+          absolute h-[28px] w-[28px] desktop:h-[33px] desktop:w-[33px] top-1/2
+          translate-y-[-50%] left-[1px] rounded-[50%] group-hover:left-[calc(100%-29px)]
+          desktop:group-hover:left-[calc(100%-34px)]
         group-hover:bg-primary group-hover:text-orange ${styles.groupTransition}`}
         >
           <DownloadRoundedIcon />
