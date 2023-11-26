@@ -44,15 +44,16 @@ export default function Contact() {
       <section
         id="contact"
         name="contact"
-        className="section-root h-max flex-col py-[36px]"
+        className="section-root h-[65vh] laptop:h-[calc(100vh-125px)]
+        desktop:h-[calc(100vh-130px)] flex-col py-[36px]"
       >
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
           CONTACT ME
         </h1>
         <form
           className="w-full tablet:w-[65%] laptop:w-1/2 desktop:w-1/2 min-h-[460px]
-        flex flex-col justify-evenly gap-6 p-[12px] tablet:p-[24px] laptop:p-[24px]
-        desktop:p-[24px] bg-[#e6e7f0] rounded-[16px] mb-[12px] relative"
+        flex flex-col justify-evenly gap-6 p-[16px_12px] bg-[#e6e7f0] rounded-[16px] mb-[12px] relative
+        tablet:p-[28px_24px] laptop:p-[28px_24px] desktop:p-[28px_24px] laptop:min-h-[500px] desktop:min-h-[500px]"
           action="/api/contact"
           method="POST"
           onSubmit={handleSubmit}

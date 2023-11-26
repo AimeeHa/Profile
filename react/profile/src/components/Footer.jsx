@@ -4,8 +4,9 @@ export default function Footer() {
   return (
     <>
       <footer
-        className="w-full h-[120px] flex flex-col gap-[8px] tablet:flex-row tablet:gap-[100px]
+        className="w-full h-[96px] flex flex-col gap-[8px] tablet:flex-row tablet:gap-[100px]
         laptop:flex-row laptop:gap-[100px] desktop:flex-row desktop:gap-[100px]
+        tablet:h-[60px] laptop:h-[60px] desktop:h-[60px]
         items-center justify-center px-24 bg-darkblue text-white"
       >
         <h2 className="font-footer text-[22px]">~ Aimee Ha ~</h2>

@@ -7,9 +7,9 @@ export default function Projects() {
       <section
         id="projects"
         name="projects"
-        className="block h-max overflow-x-scroll bg-darkblue
-        w-full p-[24px_24px_36px] tablet:p-[36px_36px_48px] laptop:p-[42px_42px_54px]
-        desktop:p-[48px_48px_60px] "
+        className="block h-max laptop:h-[calc(100vh-65px)] desktop:h-[calc(100vh-70px)]
+        overflow-x-scroll bg-darkblue w-full p-[24px_24px_36px] tablet:p-[36px_36px_48px]
+        laptop:p-[42px_42px_54px] desktop:p-[48px_48px_60px] laptop:relative desktop:relative"
       >
         <h1
           className="section-title w-[calc(100vw-48px)] laptop:w-[calc(100vw-72px)]
@@ -21,13 +21,15 @@ export default function Projects() {
         <ul
           name="projects-list"
           className="min-w-min bg-darkblue gap-[24px] laptop:gap-[42px]
-          desktop:gap-[48px] p-0 relative flex justify-center items-center tablet:gap-[36px]"
+          desktop:gap-[48px] p-0 relative flex justify-center items-center tablet:gap-[36px]
+          laptop:absolute laptop:top-[50%] laptop:translate-y-[-50%] laptop:h-[75%] laptop:pt-[12px]
+          desktop:absolute desktop:top-[50%] desktop:translate-y-[-50%] desktop:h-[75%] desktop:pt-[24px]"
         >
           {projects.map((project, i) => (
             <li
               key={i}
               className="group relative h-[500px] w-[320px] tablet:w-[420px] tablet:h-[560px]
-              laptop:w-[440px] laptop:h-[580px] desktop:w-[480px] desktop:h-[620px]
+              laptop:w-[460px] laptop:h-[100%] desktop:w-[480px] desktop:h-[100%]
               flex flex-col items-center justify-between pt-[8px] hover:pt-0 bg-white rounded-[8px]
               transition ease-in-out duration-300 cursor-pointer hover:bg-[rgba(230,231,240,0.35)]
               hover:scale-[1.02] hover:shadow-[0px_1px_12px_-1px_rgba(255,255,255,.25)]

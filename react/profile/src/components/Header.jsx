@@ -1,4 +1,4 @@
-import logo from '../assets/logo-blue2.png';
+import logo from '../assets/logo-AH.png';
 import menulogo from '../assets/logo2.png';
 import { useState, useEffect } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
@@ -23,8 +23,8 @@ export default function Header(props) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }}
-      className={`px-[4px] flex items-center justify-center hover:text-orange hover:cursor-pointer
-      relative transition ease-in-out duration-300 ${
+      className={`px-[4px] flex items-center justify-center hover:text-orange
+      hover:cursor-pointer relative transition ease-in-out duration-300 ${
         isNotMobile
           ? 'after:hover:bg-orange after:hover:absolute after:hover:top-[24px] after:hover:w-[calc(100%-16px)] after:hover:h-[3px] after:hover:rounded-[8px] after:hover:transition after:hover:ease-in-out after:hover:duration-300'
           : 'h-[100%] w-[100%] border-t-[1px] border-t-solid border-t-grey'
@@ -34,19 +34,22 @@ export default function Header(props) {
     </li>
   ));
 
+  // Download button
   const downloadBtn = (
     <div
-      className="group relative inline-block h-[38px] w-[160px]
+      className={`group relative inline-block w-[160px]
         leading-[18px] p-0 rounded-[500px] bg-primary
         transition ease-in-out border-[2px] border-blue border-solid
       hover:bg-orange hover:border-orange hover:cursor-pointer
-        hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)]"
+        hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)] ${
+          isNotMobile ? 'h-full' : 'h-[35px]'
+        }`}
     >
       <a href="/MyCV.pdf" download="AimeeHa-CV.pdf">
         <span
           className={`flex items-center justify-center bg-blue text-primary
-          absolute h-[32px] w-[32px] top-[1px] left-[1px] rounded-[50%]
-          group-hover:left-[calc(100%-34px)]
+          absolute h-[28px] w-[28px] top-1/2 translate-y-[-50%] left-[1px]
+          rounded-[50%] group-hover:left-[calc(100%-29px)]
         group-hover:bg-primary group-hover:text-orange ${styles.groupTransition}`}
         >
           <DownloadRoundedIcon />
@@ -67,31 +70,46 @@ export default function Header(props) {
     </div>
   );
 
+  // Add shadow to navbar on scroll
+  window.addEventListener('scroll', function () {
+    var navbar = document.getElementById('navbar');
+
+    if (window.scrollY > 0) {
+      navbar.classList.add('nav-shadow'); // Add the shadow utility class
+    } else {
+      navbar.classList.remove('nav-shadow'); // Remove the shadow utility class
+    }
+  });
+
   return (
     <>
       <nav
-        className="w-full h-[100px] flex items-center bg-primary text-blue font-[500]
-        py-4 px-4 justify-between laptop:px-24 laptop:h-[110px]
-        desktop:px-24 desktop:h-[120px]
-        tablet:px-12 tablet:h-[110px] tablet:text-[16px]"
+        id="navbar"
+        className="w-full h-[60px] flex items-center bg-primary text-blue font-[500]
+        py-4 px-4 justify-between laptop:px-24 laptop:h-[65px]
+        desktop:px-24 desktop:h-[70px] sticky top-0 z-50
+        tablet:px-12 tablet:h-[65px] tablet:text-[16px]"
       >
-        <div className="flex items-center max-w-1/4 min-w-max">
+        <div className="flex items-center max-w-1/4 w-[160px]">
           <img
             src={logo}
             alt="Aimee Ha"
-            className="h-[100px] laptop:h-[110px] desktop:h-[120px]"
+            className="h-[40px] laptop:h-[45px] desktop:h-[50px]"
           />
         </div>
         {isNotMobile ? (
           // Nav bar on other devices
           <>
             <ul
-              className="w-1/2 flex flex-row h-[75%] items-end hover:cursor-pointer justify-evenly
-            pb-[4px]"
+              className="w-1/2 flex flex-row h-full items-center hover:cursor-pointer
+              justify-evenly pb-[4px]"
             >
               {navItemsMapping}
             </ul>
-            <div className="w-max flex flex-row h-[75%] items-end hover:cursor-pointer justify-end ">
+            <div
+              className="w-max flex flex-row h-full items-end hover:cursor-pointer
+            justify-end "
+            >
               {downloadBtn}
             </div>
           </>
@@ -102,7 +120,7 @@ export default function Header(props) {
               {isMenuOpen ? (
                 <>
                   <div
-                    className="flex justify-end pr-[12px]"
+                    className="flex justify-end"
                     onClick={() => {
                       setIsMenuOpen(!isMenuOpen);
                     }}
@@ -113,7 +131,7 @@ export default function Header(props) {
                     />
                   </div>
                   <div
-                    className="h-1/3 w-screen z-20 absolute top-[100px] right-0 flex flex-col
+                    className="h-[30vh] w-screen z-20 absolute top-[60px] right-0 flex flex-col
                   items-center gap-[36px] bg-primary text-blue shadow-[0_5px_5px_0_rgba(0,0,0,.1)]"
                   >
                     <ul
@@ -132,7 +150,7 @@ export default function Header(props) {
                 </>
               ) : (
                 <div
-                  className="flex justify-end pr-[12px]"
+                  className="flex justify-end"
                   onClick={() => {
                     setIsMenuOpen(!isMenuOpen);
                   }}

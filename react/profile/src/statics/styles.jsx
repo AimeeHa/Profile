@@ -9,7 +9,7 @@ const styles = {
     'group text-orange flex justify-center items-center cursor-pointer relative transition ease-in-out duration-300 after:absolute after:content-[""] after:w-[calc(100%-28px)] after:h-[2px] after:rounded-[8px] after:bg-orange after:left-[2px] after:top-[22px] hover:after:bg-transparent',
   groupTransition:
     'transition ease-in-out duration-300 group-hover:transition group-hover:ease-in-out group-hover:duration-300',
-  formDiv: 'w-full h-full flex flex-col justify-center items-center gap-2',
+  formDiv: 'w-full h-full flex flex-col items-center gap-2',
   formLabel:
     'w-full px-[12px] text-blue font-[550] text-[13px] tablet:text-[14px] laptop:text-[14px] desktop:text-[15px]',
   formInput:

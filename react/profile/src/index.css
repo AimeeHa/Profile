@@ -7,10 +7,10 @@
 
 @layer components {
   .section-root {
-    @apply w-full h-max py-[24px] laptop:h-[calc(100vh-110px)] laptop:py-0
-    desktop:h-[calc(100vh-120px)] desktop:py-0 tablet:py-[36px]
+    @apply w-full h-max py-[24px] laptop:h-[calc(100vh-65px)] laptop:py-0
+    desktop:h-[calc(100vh-70px)] desktop:py-0 tablet:py-[36px]
     relative flex justify-center items-center gap-[24px] tablet:gap-[36px]
-    laptop:gap-[36px] desktop:gap-[48px] px-8 tablet:px-12
+    laptop:gap-[72px] desktop:gap-[80px] px-8 tablet:px-12
     laptop:px-16 desktop:px-24 bg-primary;
   }
 
@@ -19,6 +19,10 @@
     laptop:pt-[42px]  desktop:pt-[48px] relative after:absolute
     after:content-[''] after:w-[52px] after:h-[4px] after:rounded-[12px]
     after:bg-orange after:left-1/2 after:translate-x-[-50%];
+  }
+
+  .nav-shadow {
+    @apply shadow-[0px_0px_8px_0px_#2e31794f];
   }
 }
 
