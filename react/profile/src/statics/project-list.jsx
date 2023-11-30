@@ -6,11 +6,11 @@ import ryalto from '../assets/ryalto.png';
 
 const projects = [
   {
-    name: "Aimee's Cards",
+    name: 'Brainy Cards',
     summary: 'A dynamic flashcard app for your study excellence',
     description: [
       'A versatile and user-centric platform for creating and accessing flashcards.',
-      "Users can easily craft flashcards manually or automate the process by uploading .CSV files. In addition, Aimee's Cards empowers users to seamlessly explore popular sets, perform targeted searches, and curate their own personal study library.",
+      'Users can easily craft flashcards manually or automate the process by uploading .CSV files. In addition, Brainy Cards empowers users to seamlessly explore popular sets, perform targeted searches, and curate their own personal study library.',
       'User security is also prioritised, along with robust authentication, secure password management, and custom email confirmation for a safe and friendly experience.',
     ],
     tech: [

@@ -22,14 +22,14 @@ export default function Projects() {
           name="projects-list"
           className="min-w-min bg-darkblue gap-[24px] laptop:gap-[42px]
           desktop:gap-[48px] p-0 relative flex justify-center items-center tablet:gap-[36px]
-          laptop:absolute laptop:top-[50%] laptop:translate-y-[-50%] laptop:h-[75%] laptop:pt-[12px]
+          laptop:absolute laptop:top-[50%] laptop:translate-y-[-50%] laptop:pt-[12px]
           desktop:absolute desktop:top-[50%] desktop:translate-y-[-50%] desktop:h-[75%] desktop:pt-[24px]"
         >
           {projects.map((project, i) => (
             <li
               key={i}
-              className="group relative h-[500px] w-[320px] tablet:w-[420px] tablet:h-[560px]
-              laptop:w-[460px] laptop:h-[100%] desktop:w-[480px] desktop:h-[100%]
+              className="group relative h-[500px] w-[320px] tablet:w-[400px]
+              laptop:w-[400px] desktop:w-[480px] desktop:h-[100%]
               flex flex-col items-center justify-between pt-[8px] hover:pt-0 bg-white rounded-[8px]
               transition ease-in-out duration-300 cursor-pointer hover:bg-[rgba(230,231,240,0.35)]
               hover:scale-[1.02] hover:shadow-[0px_1px_12px_-1px_rgba(255,255,255,.25)]
@@ -39,7 +39,7 @@ export default function Projects() {
                 src={project.img}
                 alt={project.name}
                 className={`${styles.groupTransition} group-hover:opacity-5 text-blue
-                w-full h-[320px] tablet:h-[420px] laptop:h-[440px] desktop:h-[480px]`}
+                w-full h-[320px] tablet:h-[400px] laptop:h-[400px] desktop:h-[480px]`}
               />
               <article
                 className={`${styles.groupTransition} group-hover:opacity-0
@@ -65,7 +65,7 @@ export default function Projects() {
 
                 <div
                   className="flex flex-col gap-[4px] flex-grow w-full mb-[12px]
-                tablet:mb-0 laptop:mb-0 desktop:mb-0 overflow-auto"
+                tablet:mb-[16px] laptop:mb-[16px] desktop:mb-0 overflow-auto"
                 >
                   <h3
                     className="self-start font-[600] text-[15px] tablet:text-[16px]
