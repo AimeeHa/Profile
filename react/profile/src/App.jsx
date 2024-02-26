@@ -13,13 +13,18 @@ function App() {
 
   // back to top button handler
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    function handleScroll() {
       if (window.scrollY > 130) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
-    });
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const handleBackToTop = () => {
