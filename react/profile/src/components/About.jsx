@@ -53,10 +53,14 @@ export default function About() {
               simple tic-tac-toe game, which ignited my passion for development. */}
             </p>
             <p>
-              I'm now eagerly seeking fresh challenges to apply my skills,
-              expand my knowledge, and make a meaningful impact. If you have an
-              opportunity that aligns with my experience, please don't hesitate
-              to reach out.
+              I'm now pursuing my{' '}
+              <span className="text-blue font-[600]">
+                Master's Degree in Computer Science with AI
+              </span>{' '}
+              at University of York, while seeking fresh challenges to apply my
+              skills, expand my knowledge, and make a meaningful impact. If you
+              have an opportunity that aligns with my experience, please don't
+              hesitate to reach out.
             </p>
             <p>Let's embark on this exciting journey together!</p>
           </article>
