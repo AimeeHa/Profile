@@ -3,6 +3,7 @@ import littlelemon from '../assets/littlelemon.png';
 import portfolio from '../assets/portfolio.png';
 import tripplanner from '../assets/tripplanner.png';
 import ryalto from '../assets/ryalto.png';
+import itnerary from '../assets/itinerary.png';
 
 const projects = [
   {
@@ -16,27 +17,37 @@ const projects = [
     tech: [
       'React',
       'Typescript',
-      'Django',
       'Django REST Framework',
       'HTML',
       'CSS',
       'Git',
-      'AWS',
     ],
     img: flashcard,
     link: 'https://flashcard.aimeeha.dev/',
   },
   {
-    name: 'Restaurant Reservation',
-    summary: "Little Lemon Restaurant's Reservation Website",
+    name: 'Itinerary Genie',
     description: [
-      'Centered around Front-End development, this project is where I meticulously crafted custom components, adhering to a specified Type System, mirroring the real-world collaboration experience with UX/UI designers.',
-      'By leveraging advanced React hooks such as useReducer and useContext, the website seamlessly offers a list of available time slots for restaurant table reservations, and provides real-time updates for the availability of these slots, ensuring a smooth and dynamic user experience. ',
+      'Say goodbye to the hassle and stress of trip planning, and let our intuitive AI-powered platform handle the heavy lifting for you',
+      'With Itinerary Genie, users can relax and focus on the real fun of traveling while we craft personalised, seamless itineraries tailored to their preferences. ',
+      "It's all about making your travel experiences smoother and more memorable.",
     ],
-    tech: ['React', 'Javascript', 'HTML', 'CSS', 'Git'],
-    img: littlelemon,
-    link: 'https://github.com/AimeeHa/Restaurant_Reservation',
+    summary: 'Your ultimate AI-powered travel planning companion',
+    tech: ['React', 'Typescript', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Git'],
+    img: itnerary,
+    link: 'https://travel.aimeeha.dev/',
   },
+  // {
+  //   name: 'Restaurant Reservation',
+  //   summary: "Little Lemon Restaurant's Reservation Website",
+  //   description: [
+  //     'Centered around Front-End development, this project is where I meticulously crafted custom components, adhering to a specified Type System, mirroring the real-world collaboration experience with UX/UI designers.',
+  //     'By leveraging advanced React hooks such as useReducer and useContext, the website seamlessly offers a list of available time slots for restaurant table reservations, and provides real-time updates for the availability of these slots, ensuring a smooth and dynamic user experience. ',
+  //   ],
+  //   tech: ['React', 'Javascript', 'HTML', 'CSS', 'Git'],
+  //   img: littlelemon,
+  //   link: 'https://github.com/AimeeHa/Restaurant_Reservation',
+  // },
   {
     name: 'Portfolio',
     description: [
@@ -58,18 +69,6 @@ const projects = [
     tech: ['Javascript', 'HTML', 'CSS', 'Figma', 'Git'],
     img: ryalto,
     link: 'https://github.com/AimeeHa/Ryalto',
-  },
-  {
-    name: 'Trip Planner',
-    description: [
-      'While this project is in its initial stages, it holds exciting potential.',
-      'The vision is to assist users in crafting detailed trip itineraries for their upcoming travels with minimal input—just specify your destination, the number of days, and your preferred activities. The future plan includes integrating Gmail for seamless registration and login, and even generating calendar invites to ensure you have your itinerary readily accessible at your fingertips.',
-      "It's all about making your travel experiences smoother and more memorable.",
-    ],
-    summary: 'Your ultimate travel planning companion, powered by OpenAI',
-    tech: ['React', 'Typescript', 'Node.js', 'Tailwind CSS'],
-    img: tripplanner,
-    link: 'https://github.com/AimeeHa/TripPlanner',
   },
 ];
 
