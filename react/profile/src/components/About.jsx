@@ -4,12 +4,11 @@ export default function About() {
   const skills = [
     'React',
     'Typescript',
-    'HTML',
-    'CSS',
     'Python',
     'Django',
-    'Javascript',
     'Node.js',
+    'MongoDB'
+    'CSS'
     'SQL',
     'Git',
     'Figma',
