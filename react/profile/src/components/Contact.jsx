@@ -26,16 +26,16 @@ export default function Contact() {
       if (res.status === 200) {
         setIsDisplay(true);
         setConfirmation(200);
-
-        setTimeout(() => {
-          setFormData({ name: '', email: '', message: '' });
-          setConfirmation(0);
-          setIsDisplay(false);
-        }, 2500);
       } else {
         setConfirmation(400);
         setIsDisplay(true);
       }
+
+      setTimeout(() => {
+        setFormData({ name: '', email: '', message: '' });
+        setConfirmation(0);
+        setIsDisplay(false);
+      }, 3000);
     });
   };
 
@@ -177,16 +177,38 @@ export default function Contact() {
                     !
                   </p>
                   <p className="balance text-center">
-                    Something went wrong. Please try again or{' '}
-                    <span className="text-blue">
-                      <a href="mailto:aimee.ha95@gmail.com">email me</a>.
-                    </span>
+                    {/* Something went wrong. Please try again or{' '} */}
+                    {/* TODO: revert message once new DB integrated */}
+                    Apologies! I am looking to move my database away from the
+                    previous provider, PlanetScale, so the message not be sent
+                    properly at the moment.
+                    <br /> Please try{' '}
+                    <span className="text-blue underline underline-offset-[4px]">
+                      <a href="mailto:aimee.ha95@gmail.com">email me</a>
+                    </span>{' '}
+                    instead.
                   </p>
                 </>
               ) : null}
             </div>
           </article>
         </form>
+
+        <p
+          className="balance text-center text-orange w-full tablet:w-[65%] laptop:w-1/2
+        desktop:w-1/2"
+        >
+          {/* Something went wrong. Please try again or{' '} */}
+          {/* TODO: revert message once new DB integrated */}
+          Apologies! I am looking to move my database away from the previous
+          provider, PlanetScale, so the message might not be sent properly at
+          the moment.
+          <br /> Please try{' '}
+          <span className="text-blue underline underline-offset-[4px]">
+            <a href="mailto:aimee.ha95@gmail.com">email me</a>
+          </span>{' '}
+          instead.
+        </p>
       </section>
     </>
   );
