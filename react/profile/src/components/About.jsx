@@ -8,7 +8,7 @@ export default function About() {
     'Django',
     'Node.js',
     'MongoDB'
-    'CSS'
+    'CSS',
     'SQL',
     'Git',
     'Figma',
