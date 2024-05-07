@@ -9,12 +9,12 @@ export default function Projects() {
         name="projects"
         className="block h-max laptop:h-[calc(100vh-65px)] desktop:h-[calc(100vh-70px)]
         overflow-x-scroll bg-darkblue w-full p-[24px_24px_36px] tablet:p-[36px_36px_48px]
-        laptop:p-[42px_42px_54px] desktop:p-[48px_48px_60px] laptop:relative desktop:relative"
+        laptop:p-[42px_42px_54px] desktop:p-[48px_48px_60px] laptop:relative"
       >
         <h1
           className="section-title w-[calc(100vw-48px)] laptop:w-[calc(100vw-72px)]
         desktop:w-[calc(100vw-96px)] text-white bg-darkblue after:top-[36px] mb-[24px]
-        tablet:mb-[36px] laptop:mb-[36px] desktop:mb-[96px] p-0"
+        tablet:mb-[36px] desktop:mb-[96px] p-0"
         >
           PROJECTS
         </h1>
@@ -23,13 +23,13 @@ export default function Projects() {
           className="min-w-min bg-darkblue gap-[24px] laptop:gap-[42px]
           desktop:gap-[48px] p-0 relative flex justify-center items-center tablet:gap-[36px]
           laptop:absolute laptop:top-[50%] laptop:translate-y-[-50%] laptop:pt-[12px]
-          desktop:absolute desktop:top-[50%] desktop:translate-y-[-50%] desktop:h-[75%] desktop:pt-[24px]"
+          desktop:h-[75%] desktop:pt-[24px]"
         >
           {projects.map((project, i) => (
             <li
               key={i}
               className="group relative h-[500px] w-[320px] tablet:w-[400px]
-              laptop:w-[400px] desktop:w-[480px] desktop:h-[100%]
+              desktop:w-[480px] desktop:h-[100%]
               flex flex-col items-center justify-between bg-white rounded-[8px]
               transition ease-in-out duration-300 cursor-pointer hover:bg-[rgba(230,231,240,0.35)]
               hover:scale-[1.02] hover:shadow-[0px_1px_12px_-1px_rgba(255,255,255,.25)]
@@ -39,7 +39,7 @@ export default function Projects() {
                 src={project.img}
                 alt={project.name}
                 className={`${styles.groupTransition} group-hover:opacity-5 text-blue
-                w-full h-[320px] tablet:h-[400px] laptop:h-[400px] desktop:h-[480px] p-2
+                w-full h-[320px] tablet:h-[400px] desktop:h-[480px] p-2
                 rounded-[12px]`}
               />
               <article
@@ -66,11 +66,11 @@ export default function Projects() {
 
                 <div
                   className="flex flex-col gap-[4px] flex-grow w-full mb-[12px]
-                tablet:mb-[16px] laptop:mb-[16px] desktop:mb-0 overflow-auto"
+                tablet:mb-[16px] desktop:mb-0 overflow-auto"
                 >
                   <h3
                     className="self-start font-[600] text-[15px] tablet:text-[16px]
-                  laptop:text-[16px] desktop:text-[17px]"
+                  desktop:text-[17px]"
                   >
                     Project Overview
                   </h3>
@@ -86,7 +86,7 @@ export default function Projects() {
 
                   <h3
                     className="mt-[20px] self-start font-[600] text-[15px] tablet:text-[16px]
-                  laptop:text-[16px] desktop:text-[17px]"
+                  desktop:text-[17px]"
                   >
                     Tech Stack
                   </h3>

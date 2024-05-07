@@ -6,14 +6,14 @@ const styles = {
   orangeBtn:
     'w-max px-[16px] py-[6px] rounded-[18px] bg-orange text-primary hover:cursor-pointer hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)] hover:translate-y-[-1px] transition ease-in-out duration-300',
   wavingAfter:
-    'group text-orange flex justify-center items-center cursor-pointer relative transition ease-in-out duration-300 after:absolute after:content-[""] after:w-[calc(100%-28px)] after:h-[2px] after:rounded-[8px] after:bg-orange after:left-[2px] after:top-[22px] hover:after:bg-transparent',
+    'group text-orange flex justify-center items-center cursor-pointer relative transition ease-in-out duration-300',
   groupTransition:
     'transition ease-in-out duration-300 group-hover:transition group-hover:ease-in-out group-hover:duration-300',
   formDiv: 'w-full h-full flex flex-col items-center gap-2',
   formLabel:
-    'w-full px-[12px] text-blue font-[550] text-[13px] tablet:text-[14px] laptop:text-[14px] desktop:text-[15px]',
+    'w-full px-[12px] text-blue font-[550] text-[13px] tablet:text-[14px] desktop:text-[15px]',
   formInput:
-    'w-[calc(100%-24px)] p-[12px] rounded-[8px] bg-white text-[14px] tablet:text-[15px] laptop:text-[15px] desktop:text-[16px] text-lightblue font-[400] focus:text-blue focus:font-[500] border-[2px] border-solid border-transparent focus:border-blue focus:border-solid focus:border-[2px] focus:outline-none',
+    'w-[calc(100%-24px)] p-[12px] rounded-[8px] bg-white text-[14px] tablet:text-[15px] desktop:text-[16px] text-lightblue font-[400] focus:text-blue focus:font-[500] border-[2px] border-solid border-transparent focus:border-blue focus:border-solid focus:border-[2px] focus:outline-none',
 };
 
 export default styles;

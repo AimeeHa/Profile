@@ -9,10 +9,9 @@ export default function Hero(props) {
   return (
     <section className="section-root pb-0">
       <ul
-        className="flex flex-col gap-[12px] tablet:gap-[24px] laptop:gap-[24px] desktop:gap-[24px]
+        className="flex flex-col gap-[12px] tablet:gap-[24px]
       absolute left-0 top-1/2 translate-y-[-50%] z-10 bg-orange text-white px-[4px]
-      py-[4px] tablet:px-[8px] tablet:py-[8px] laptop:px-[8px] laptop:py-[8px] desktop::px-[8px]
-      desktop::py-[8px] rounded-[0px_8px_8px_0px] shadow-[0px_1px_12px_-2px_#2e3179c9]"
+      py-[4px] tablet:p-[8px] rounded-[0px_8px_8px_0px] shadow-[0px_1px_12px_-2px_#2e3179c9]"
       >
         {links.map((link, i) => (
           <li
@@ -37,8 +36,7 @@ export default function Hero(props) {
           <img
             src={heroImg}
             alt="PHOTO"
-            className="z-10 laptop:min-w-auto desktop:min-w-auto laptop:h-[75vh] desktop:h-[75vh]
-            tablet:h-[50vh] h-auto"
+            className="z-10 laptop:min-w-auto laptop:h-[75vh] tablet:h-[50vh] h-auto"
           ></img>
           <div
             className="absolute bg-lightbeige rounded-[50%] bottom-[-56px] tablet:bottom-[-84px] animate-gradient
@@ -46,9 +44,9 @@ export default function Hero(props) {
           ></div>
         </article>
         <article
-          className="z-10 laptop:animate-greetingSlide desktop:animate-greetingSlide
-        animate-greetingSlideSmall h-full flex flex-col items-center justify-center
-        laptop:items-start desktop:items-start text-center laptop:text-left desktop:text-left"
+          className="z-10 laptop:animate-greetingSlide animate-greetingSlideSmall
+          h-full flex flex-col items-center justify-center laptop:items-start text-center
+          laptop:text-left"
         >
           <p
             className="px-[12px] py-[4px] rounded-[16px] text-[14px] font-[500] relative
@@ -70,7 +68,7 @@ export default function Hero(props) {
           </p>
           {props.isNotMobile ? (
             <button
-              className={`${styles.orangeBtn} laptop:mt-[24px] desktop:mt-[24px] tablet:mt-[16px]`}
+              className={`${styles.orangeBtn} laptop:mt-[24px] tablet:mt-[16px]`}
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('projects').scrollIntoView({

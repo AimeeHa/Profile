@@ -91,7 +91,7 @@ export default {
     screens: {
       tablet: '680px',
       laptop: '1274px',
-      desktop: '1480px',
+      desktop: '1440px',
     },
   },
   plugins: [],

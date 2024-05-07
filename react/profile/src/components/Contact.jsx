@@ -51,9 +51,9 @@ export default function Contact() {
           CONTACT ME
         </h1>
         <form
-          className="w-full tablet:w-[65%] laptop:w-1/2 desktop:w-1/2 min-h-[460px]
-        flex flex-col justify-evenly gap-6 p-[16px_12px] bg-[#e6e7f0] rounded-[16px] mb-[12px] relative
-        tablet:p-[28px_24px] laptop:p-[28px_24px] desktop:p-[28px_24px] laptop:min-h-[460px] desktop:min-h-[500px]"
+          className="w-full tablet:w-[65%] laptop:w-1/2 min-h-[460px] flex flex-col
+          justify-evenly gap-6 p-[16px_12px] bg-[#e6e7f0] rounded-[16px] mb-[12px] relative
+        tablet:p-[28px_24px] desktop:min-h-[500px]"
           action="/api/contact"
           method="POST"
           onSubmit={handleSubmit}
@@ -117,8 +117,7 @@ export default function Contact() {
             className={`${isDisplay ? 'flex' : 'hidden'}
             w-full h-full bg-primary rounded-[16px] absolute top-0 left-0
             flex-col items-center justify-center gap-[28px] tablet:p-[24px]
-            laptop:p-[24px] desktop:p-[24px] text-lightblue font-[500] z-10
-            transition ease-in duration-300`}
+            text-lightblue font-[500] z-10 transition ease-in duration-300`}
           >
             {confirmation === 200 ? (
               <div
@@ -194,10 +193,7 @@ export default function Contact() {
           </article>
         </form>
 
-        <p
-          className="balance text-center text-orange w-full tablet:w-[65%] laptop:w-1/2
-        desktop:w-1/2"
-        >
+        <p className="balance text-center text-orange w-full tablet:w-[65%] laptop:w-1/2">
           {/* Something went wrong. Please try again or{' '} */}
           {/* TODO: revert message once new DB integrated */}
           Apologies! I am looking to move my database away from the previous
@@ -205,7 +201,7 @@ export default function Contact() {
           the moment.
           <br /> Please try{' '}
           <span className="text-blue underline underline-offset-[4px]">
-            <a href="mailto:aimee.ha95@gmail.com">email me</a>
+            <a href="mailto:aimee.ha95@gmail.com">emailing me</a>
           </span>{' '}
           instead.
         </p>

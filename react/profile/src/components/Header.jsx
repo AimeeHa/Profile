@@ -87,9 +87,8 @@ export default function Header(props) {
       <nav
         id="navbar"
         className="w-full h-[60px] flex items-center bg-primary text-blue font-[500]
-        py-4 px-4 justify-between laptop:px-24 laptop:h-[65px]
-        desktop:px-24 desktop:h-[70px] sticky top-0 z-50
-        tablet:px-12 tablet:h-[65px] tablet:text-[16px]"
+        py-4 px-4 justify-between laptop:px-24 desktop:h-[70px] sticky
+        top-0 z-50 tablet:px-12 tablet:h-[65px] tablet:text-[16px]"
       >
         <div className="flex items-center max-w-1/4 w-[160px]">
           <img
