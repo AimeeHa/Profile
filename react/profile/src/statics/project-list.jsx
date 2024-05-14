@@ -4,8 +4,42 @@ import portfolio from '../assets/portfolio.png';
 import tripplanner from '../assets/tripplanner.png';
 import ryalto from '../assets/ryalto.png';
 import itnerary from '../assets/itinerary.png';
+import tldw from '../assets/tldw.png';
 
 const projects = [
+  {
+    name: "TLDW (Too Long, Didn't Watch)",
+    description: [
+      'Feeling too tired of watching long videos and spending tons of time trying to remember what main points have been mentioned?',
+      'TLDW is here to solve your problem! Our tool can help summarise any YouTube video and give you a comprehensive summary along with detailed sectional breakdowns for any video of any length.',
+      'Get your knowledge enhanced and your time saved.',
+    ],
+    summary: 'YouTube video summary application using LangChain',
+    tech: [
+      'Python',
+      'Next.js',
+      'React',
+      'Typescript',
+      'MongoDB',
+      'Tailwind CSS',
+      'Git',
+      'Kubernetes',
+    ],
+    img: tldw,
+    link: 'https://tldw.pro/',
+  },
+  {
+    name: 'Itinerary Genie',
+    description: [
+      'Say goodbye to the hassle and stress of trip planning, and let our intuitive AI-powered platform handle the heavy lifting for you',
+      'With Itinerary Genie, users can relax and focus on the real fun of traveling while we craft personalised, seamless itineraries tailored to their preferences. ',
+      "It's all about making your travel experiences smoother and more memorable.",
+    ],
+    summary: 'Your ultimate AI-powered travel planning companion',
+    tech: ['React', 'Typescript', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Git'],
+    img: itnerary,
+    link: 'https://travel.aimeeha.dev/',
+  },
   {
     name: 'Brainy Cards',
     summary: 'A dynamic flashcard app for your study excellence',
@@ -24,18 +58,6 @@ const projects = [
     ],
     img: flashcard,
     link: 'https://flashcard.aimeeha.dev/',
-  },
-  {
-    name: 'Itinerary Genie',
-    description: [
-      'Say goodbye to the hassle and stress of trip planning, and let our intuitive AI-powered platform handle the heavy lifting for you',
-      'With Itinerary Genie, users can relax and focus on the real fun of traveling while we craft personalised, seamless itineraries tailored to their preferences. ',
-      "It's all about making your travel experiences smoother and more memorable.",
-    ],
-    summary: 'Your ultimate AI-powered travel planning companion',
-    tech: ['React', 'Typescript', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Git'],
-    img: itnerary,
-    link: 'https://travel.aimeeha.dev/',
   },
   // {
   //   name: 'Restaurant Reservation',
