@@ -29,7 +29,7 @@ export default function Projects() {
             <li
               key={i}
               className="group relative h-[500px] w-[320px] tablet:w-[400px]
-              desktop:w-[480px] desktop:h-[100%]
+              desktop:w-[480px] desktop:h-[620px]
               flex flex-col items-center justify-between bg-white rounded-[8px]
               transition ease-in-out duration-300 cursor-pointer hover:bg-[rgba(230,231,240,0.35)]
               hover:scale-[1.02] hover:shadow-[0px_1px_12px_-1px_rgba(255,255,255,.25)]
