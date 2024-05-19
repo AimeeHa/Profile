@@ -20,7 +20,7 @@ export default function About() {
       <section
         id="about"
         name="about"
-        className="section-root flex-col py-[36px]"
+        className="section-root laptop:max-h-[920px] flex-col py-[36px]"
       >
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
           ABOUT ME

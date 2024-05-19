@@ -44,7 +44,7 @@ export default function Contact() {
       <section
         id="contact"
         name="contact"
-        className="section-root laptop:h-[calc(100vh-125px)]
+        className="section-root laptop:h-[calc(100vh-125px)] laptop:max-h-[920px]
         desktop:h-[calc(100vh-130px)] flex-col py-[36px] laptop:gap-[40px]"
       >
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
