@@ -5,6 +5,7 @@ import tripplanner from '../assets/tripplanner.png';
 import ryalto from '../assets/ryalto.png';
 import itnerary from '../assets/itinerary.png';
 import tldw from '../assets/tldw.png';
+import impakter from '../assets/impakter.png';
 
 const projects = [
   {
@@ -80,6 +81,17 @@ const projects = [
     tech: ['React', 'Javascript', 'Tailwind CSS', 'Node.js', 'MySQL', 'Git'],
     img: portfolio,
     link: '/',
+  },
+  {
+    name: 'Impakter Index',
+    description: [
+      'This project was done as part of a coding challenge for Impakter, a platform that empowers sustainability for SMEs.',
+      'The task was to develop Impakter Index Web Application, a tool for companies and individuals to understand how sustainable utility companies are across Europe.',
+    ],
+    summary: 'Sustainability index web application for Impakter',
+    tech: ['React', 'Typescript', 'Tailwind CSS', 'Git'],
+    img: impakter,
+    link: 'https://github.com/AimeeHa/Impakter',
   },
   {
     name: "Ryalto's Developer Page",
