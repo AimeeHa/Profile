@@ -64,6 +64,7 @@ export default function Contact() {
             </label>
             <input
               className={styles.formInput}
+              disabled //TODO: remove this line once new DB integrated
               type="text"
               id="name"
               placeholder="ABC"
@@ -80,6 +81,7 @@ export default function Contact() {
             </label>
             <input
               className={styles.formInput}
+              disabled //TODO: remove this line once new DB integrated
               type="email"
               id="email"
               placeholder="abc@xyz.com"
@@ -96,6 +98,7 @@ export default function Contact() {
             </label>
             <textarea
               className={styles.formInput}
+              disabled //TODO: remove this line once new DB integrated
               id="message"
               rows={3}
               placeholder="I came across your portfolio and ..."
