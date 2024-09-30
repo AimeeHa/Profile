@@ -64,7 +64,6 @@ export default function Contact() {
             </label>
             <input
               className={styles.formInput}
-              disabled //TODO: remove this line once new DB integrated
               type="text"
               id="name"
               placeholder="ABC"
@@ -81,7 +80,6 @@ export default function Contact() {
             </label>
             <input
               className={styles.formInput}
-              disabled //TODO: remove this line once new DB integrated
               type="email"
               id="email"
               placeholder="abc@xyz.com"
@@ -98,7 +96,6 @@ export default function Contact() {
             </label>
             <textarea
               className={styles.formInput}
-              disabled //TODO: remove this line once new DB integrated
               id="message"
               rows={3}
               placeholder="I came across your portfolio and ..."
@@ -179,12 +176,7 @@ export default function Contact() {
                     !
                   </p>
                   <p className="balance text-center">
-                    {/* Something went wrong. Please try again or{' '} */}
-                    {/* TODO: revert message once new DB integrated */}
-                    Apologies! I am looking to move my database away from the
-                    previous provider, PlanetScale, so the message not be sent
-                    properly at the moment.
-                    <br /> Please try{' '}
+                    Something went wrong. Please try again or{' '}
                     <span className="text-blue underline underline-offset-[4px]">
                       <a href="mailto:aimee.ha95@gmail.com">email me</a>
                     </span>{' '}
@@ -195,19 +187,6 @@ export default function Contact() {
             </div>
           </article>
         </form>
-
-        <p className="balance text-center text-orange w-full tablet:w-[65%] laptop:w-1/2">
-          {/* Something went wrong. Please try again or{' '} */}
-          {/* TODO: revert message once new DB integrated */}
-          Apologies! I am looking to move my database away from the previous
-          provider, PlanetScale, so the message might not be sent properly at
-          the moment.
-          <br /> Please try{' '}
-          <span className="text-blue underline underline-offset-[4px]">
-            <a href="mailto:aimee.ha95@gmail.com">emailing me</a>
-          </span>{' '}
-          instead.
-        </p>
       </section>
     </>
   );
