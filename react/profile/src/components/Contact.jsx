@@ -44,8 +44,7 @@ export default function Contact() {
       <section
         id="contact"
         name="contact"
-        className="section-root laptop:h-[calc(100vh-125px)] laptop:max-h-[920px]
-        desktop:h-[calc(100vh-130px)] flex-col py-[36px] laptop:gap-[40px]"
+        className="section-root flex-col laptop:gap-[40px]"
       >
         <h1 className="section-title bg-white text-blue pt-0 after:top-[36px]">
           CONTACT ME
@@ -53,7 +52,7 @@ export default function Contact() {
         <form
           className="w-full tablet:w-[65%] laptop:w-1/2 min-h-[460px] flex flex-col
           justify-evenly gap-6 p-[16px_12px] bg-[#e6e7f0] rounded-[16px] mb-[12px] relative
-        tablet:p-[28px_24px] desktop:min-h-[500px]"
+          tablet:p-[28px_24px] desktop:min-h-[500px] max-w-[800px]"
           action="/api/contact"
           method="POST"
           onSubmit={handleSubmit}

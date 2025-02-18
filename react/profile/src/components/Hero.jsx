@@ -7,7 +7,7 @@ export default function Hero(props) {
   const heroImg = props.isNotMobile ? hero : hero2;
 
   return (
-    <section className="section-root pb-0">
+    <section className="section-root pb-0 laptop:h-[calc(100vh-65px)] desktop:h-[calc(100vh-70px)]">
       <ul
         className="flex flex-col gap-[12px] tablet:gap-[24px]
       absolute left-0 top-1/2 translate-y-[-50%] z-10 bg-orange text-white px-[4px]
@@ -36,7 +36,7 @@ export default function Hero(props) {
           <img
             src={heroImg}
             alt="PHOTO"
-            className="z-10 laptop:min-w-auto laptop:h-[75vh] tablet:h-[50vh] h-auto"
+            className="z-10 laptop:min-w-auto laptop:h-[70vh] tablet:h-[50vh] h-auto"
           ></img>
           <div
             className="absolute bg-lightbeige rounded-[50%] bottom-[-56px] tablet:bottom-[-84px] animate-gradient
@@ -61,10 +61,10 @@ export default function Hero(props) {
             I'M AIMEE
           </h1>
           <h2 className="laptop:text-[22px] desktop:text-[26px] text-[16px] text-blue font-[600] ">
-            Coding Enthusiast & Aspiring Web Developer
+            Coding Enthusiast & Aspiring Developer
           </h2>
           <p className="text-lightblue text-[13px] laptop:text-[14px] desktop:text-[16px] font-[450] pt-[6px]">
-            On a journey to deliver web solutions that make a meaningful impact.
+            On a journey to deliver solutions that make a meaningful impact.
           </p>
           {props.isNotMobile ? (
             <button

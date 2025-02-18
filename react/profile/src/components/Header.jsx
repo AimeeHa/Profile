@@ -39,9 +39,10 @@ export default function Header(props) {
     <div
       className={`group relative inline-block w-[160px]
         leading-[18px] p-0 rounded-[500px] bg-primary
-        transition ease-in-out border-[2px] border-blue border-solid
+        transition ease-linear delay-100 border-[2px] border-blue border-solid
       hover:bg-orange hover:border-orange hover:cursor-pointer
-        hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)] ${
+        hover:shadow-[0px_1px_10px_-1px_rgba(48,49,121,.45)]
+        hover:transition hover:ease-linear hover:delay-100 ${
           isNotMobile ? 'h-full' : 'h-[35px]'
         }`}
     >
@@ -86,84 +87,88 @@ export default function Header(props) {
     <>
       <nav
         id="navbar"
-        className="w-full h-[60px] flex items-center bg-primary text-blue font-[500]
-        py-4 px-4 justify-between laptop:px-24 desktop:h-[70px] sticky
-        top-0 z-50 tablet:px-12 tablet:h-[65px] tablet:text-[16px]"
+        className="w-full flex items-center justify-center sticky top-0 z-50 bg-primary"
       >
-        <div className="flex items-center max-w-1/4 w-[160px]">
-          <img
-            src={logo}
-            alt="Aimee Ha"
-            className="h-[40px] laptop:h-[45px] desktop:h-[50px]"
-          />
-        </div>
-        {isNotMobile ? (
-          // Nav bar on other devices
-          <>
-            <ul
-              className="w-1/2 flex flex-row h-full items-center hover:cursor-pointer
+        <div
+          className="max-w-[1200px] flex items-center h-[60px] text-blue
+        font-[500] py-4 px-4 justify-between laptop:px-24 desktop:h-[70px]
+        tablet:px-12 tablet:h-[65px] tablet:text-[16px] w-full"
+        >
+          <div className="flex items-center max-w-1/4 w-[160px]">
+            <img
+              src={logo}
+              alt="Aimee Ha"
+              className="h-[40px] laptop:h-[45px] desktop:h-[50px]"
+            />
+          </div>
+          {isNotMobile ? (
+            // Nav bar on other devices
+            <>
+              <ul
+                className="w-1/2 flex flex-row h-full items-center hover:cursor-pointer
               justify-evenly pb-[4px]"
-            >
-              {navItemsMapping}
-            </ul>
-            <div
-              className="w-max flex flex-row h-full items-end hover:cursor-pointer
+              >
+                {navItemsMapping}
+              </ul>
+              <div
+                className="w-max flex flex-row h-full items-end hover:cursor-pointer
             justify-end "
-            >
-              {downloadBtn}
-            </div>
-          </>
-        ) : (
-          // Hamburger menu on mobile
-          <>
-            <div className="flex flex-col w-1/2">
-              {isMenuOpen ? (
-                <>
+              >
+                {downloadBtn}
+              </div>
+            </>
+          ) : (
+            // Hamburger menu on mobile
+            <>
+              <div className="flex flex-col w-1/2">
+                {isMenuOpen ? (
+                  <>
+                    <div
+                      className="flex justify-end"
+                      onClick={() => {
+                        setIsMenuOpen(!isMenuOpen);
+                      }}
+                    >
+                      <CloseRoundedIcon
+                        className="text-menu hover:cursor-pointer"
+                        style={{ height: '30px', width: '30px' }}
+                      />
+                    </div>
+                    <div
+                      className="h-[30vh] w-screen z-20 absolute top-[60px] right-0 flex flex-col
+                  items-center gap-[36px] bg-primary text-blue shadow-[0_5px_5px_0_rgba(0,0,0,.1)]"
+                    >
+                      <ul
+                        className="h-[100%] w-screen grid grid-rows-4 grid-cols-1 items-center
+                    justify-center text-[16px]"
+                      >
+                        {navItemsMapping}
+                        <li
+                          className="h-[100%] w-[100%] border-t-[1px] border-t-solid border-t-grey
+                      flex items-center justify-center"
+                        >
+                          {downloadBtn}
+                        </li>
+                      </ul>
+                    </div>
+                  </>
+                ) : (
                   <div
                     className="flex justify-end"
                     onClick={() => {
                       setIsMenuOpen(!isMenuOpen);
                     }}
                   >
-                    <CloseRoundedIcon
-                      className="text-menu hover:cursor-pointer"
-                      style={{ height: '30px', width: '30px' }}
+                    <MenuRoundedIcon
+                      style={{ height: '32px', width: '36px' }}
+                      className="bg-menu rounded-[6px] text-menu cursor-pointer"
                     />
                   </div>
-                  <div
-                    className="h-[30vh] w-screen z-20 absolute top-[60px] right-0 flex flex-col
-                  items-center gap-[36px] bg-primary text-blue shadow-[0_5px_5px_0_rgba(0,0,0,.1)]"
-                  >
-                    <ul
-                      className="h-[100%] w-screen grid grid-rows-4 grid-cols-1 items-center
-                    justify-center text-[16px]"
-                    >
-                      {navItemsMapping}
-                      <li
-                        className="h-[100%] w-[100%] border-t-[1px] border-t-solid border-t-grey
-                      flex items-center justify-center"
-                      >
-                        {downloadBtn}
-                      </li>
-                    </ul>
-                  </div>
-                </>
-              ) : (
-                <div
-                  className="flex justify-end"
-                  onClick={() => {
-                    setIsMenuOpen(!isMenuOpen);
-                  }}
-                >
-                  <MenuRoundedIcon
-                    style={{ height: '32px', width: '36px' }}
-                    className="bg-menu rounded-[6px] text-menu cursor-pointer"
-                  />
-                </div>
-              )}
-            </div>
-          </>
-        )}
+                )}
+              </div>
+            </>
+          )}
+        </div>
       </nav>
     </>
   );

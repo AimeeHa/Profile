@@ -62,8 +62,8 @@ function App() {
           <button
             className="group bg-orange text-white fixed right-[24px] bottom-[24px]
             laptop:right-[48px] laptop:bottom-[48px] desktop:right-[48px] desktop:bottom-[48px]
-            tablet:right-[48px] tablet:bottom-[48px] flex items-center justify-center
-            rounded-[50%] p-[8px] cursor-pointer shadow-[0px_1px_12px_-2px_#2e3179c9]"
+            tablet:right-[48px] tablet:bottom-[72px] flex items-center justify-center
+            rounded-[50%] p-[8px] cursor-pointer shadow-[0px_1px_8px_0_rgba(48,49,121,.45)] hover:bg-[#F26952]"
             onClick={(e) => {
               e.preventDefault();
               handleBackToTop();
