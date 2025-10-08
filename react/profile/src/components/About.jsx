@@ -35,9 +35,9 @@ export default function About() {
             text-lightblue font-[450] text-justify tablet:whitespace-normal"
           >
             <p>
-              Hi! I'm <span className="text-blue font-[600]">Aimee</span>, an
-              upcoming Software Dev Engineer Intern at{' '}
-              <span className="text-blue font-[600]">Amazon</span> this summer
+              Hi! I'm <span className="text-blue font-[600]">Aimee</span>, a
+              Software Dev Engineer Intern at{' '}
+              <span className="text-blue font-[600]">Amazon</span> in summer
               2025.
             </p>
             <p>
