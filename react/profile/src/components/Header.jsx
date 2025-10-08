@@ -1,5 +1,6 @@
 import logo from '../assets/logo-AH.png';
 import menulogo from '../assets/logo2.png';
+import CV from '../assets/CV.pdf';
 import { useState, useEffect } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
@@ -46,7 +47,7 @@ export default function Header(props) {
           isNotMobile ? 'h-full' : 'h-[35px]'
         }`}
     >
-      <a href="/CV.pdf" download="AimeeHa-CV.pdf">
+      <a href={CV} download="AimeeHa-CV.pdf">
         <span
           className={`flex items-center justify-center bg-blue text-primary
           absolute h-[28px] w-[28px] desktop:h-[33px] desktop:w-[33px] top-1/2
