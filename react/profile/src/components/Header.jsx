@@ -46,7 +46,7 @@ export default function Header(props) {
           isNotMobile ? 'h-full' : 'h-[35px]'
         }`}
     >
-      <a href="/MyCV.pdf" download="AimeeHa-CV.pdf">
+      <a href="/CV.pdf" download="AimeeHa-CV.pdf">
         <span
           className={`flex items-center justify-center bg-blue text-primary
           absolute h-[28px] w-[28px] desktop:h-[33px] desktop:w-[33px] top-1/2
